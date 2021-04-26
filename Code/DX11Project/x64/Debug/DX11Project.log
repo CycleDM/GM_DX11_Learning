@@ -1,0 +1,9 @@
+﻿  compilation object save succeeded; see C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\unlitTexturePS.cso
+  compilation object save succeeded; see C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\unlitTextureVS.cso
+  compilation object save succeeded; see C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\vertexLightingPS.cso
+  compilation object save succeeded; see C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\vertexLightingVS.cso
+  main.cpp
+  manager.cpp
+  polygon2D.cpp
+  renderer.cpp
+  DX11Project.vcxproj -> C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\x64\Debug\DX11Project.exe
