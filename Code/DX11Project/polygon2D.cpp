@@ -39,7 +39,14 @@ void Polygon2D::Init()
 
 	Renderer::GetDevice()->CreateBuffer(&bd, &sd, &m_VertexBuffer);
 
-	D3DX11CreateShaderResourceViewFromFile(Renderer::GetDevice(), "asset/texture/field004.jpg", NULL, NULL, &m_Texture, NULL);
+	D3DX11CreateShaderResourceViewFromFile(
+		Renderer::GetDevice(), 
+		"asset/texture/CycleDM.jpg", 
+		NULL, 
+		NULL, 
+		&m_Texture, 
+		NULL);
+
 	assert(m_Texture);
 
 	Renderer::CreateVertexShader(&m_VertexShader, &m_VertexLayout, "unlitTextureVS.cso");
@@ -80,4 +87,12 @@ void Polygon2D::Draw()
 
 	// テクスチャ設定
 	Renderer::GetDeviceContext()->PSSetShaderResources(0, 1, &m_Texture);
+
+	// プリミティブトポロジ設定
+	Renderer::GetDeviceContext()->IASetPrimitiveTopology(
+		D3D11_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP);
+
+	// ポリゴン描画
+	ID3D11DeviceContext* deviceContext = Renderer::GetDeviceContext();
+	Renderer::GetDeviceContext()->Draw(4, 0);
 }
