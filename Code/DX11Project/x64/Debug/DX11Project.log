@@ -1,2 +1,11 @@
-﻿  manager.cpp
-  DX11Project.vcxproj -> C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\x64\Debug\DX11Project.exe
+﻿  compilation object save succeeded; see C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\unlitTexturePS.cso
+  compilation object save succeeded; see C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\unlitTextureVS.cso
+  compilation object save succeeded; see C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\vertexLightingPS.cso
+  compilation object save succeeded; see C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\vertexLightingVS.cso
+  camera.cpp
+  field.cpp
+  main.cpp
+  manager.cpp
+  polygon2D.cpp
+  renderer.cpp
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\camera.cpp(26): error C2102: “&”要求左值
