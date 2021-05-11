@@ -23,7 +23,8 @@ void Camera::Draw()
 {
 	// ビューマトリクス設定
 	D3DXMATRIX viewMatrix;
-	D3DXMatrixLookAtLH(&viewMatrix, &m_Position, &m_Target, &D3DXVECTOR3(0.0f, 1.0f, 0.0f));
+	D3DXVECTOR3 up = D3DXVECTOR3(0.0f, 1.0f, 0.0f);
+	D3DXMatrixLookAtLH(&viewMatrix, &m_Position, &m_Target, &up);
 
 	Renderer::SetViewMatrix(&viewMatrix);
 

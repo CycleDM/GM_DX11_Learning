@@ -21,13 +21,14 @@ void Field::Init()
 	vertex[2].Diffuse = D3DXVECTOR4(1.0f, 1.0f, 1.0f, 1.0f);
 	vertex[2].TexCoord = D3DXVECTOR2(0.0f, 10.0f);
 
-	vertex[3].Position = D3DXVECTOR3(10.0f, -10.0f, 0.0f);
+	vertex[3].Position = D3DXVECTOR3(10.0f, 0.0f, -10.0f);
 	vertex[3].Normal = D3DXVECTOR3(0.0f, 1.0f, 0.0f);
 	vertex[3].Diffuse = D3DXVECTOR4(1.0f, 1.0f, 1.0f, 1.0f);
 	vertex[3].TexCoord = D3DXVECTOR2(10.0f, 10.0f);
 
 	// 頂点バッファ生成
 	D3D11_BUFFER_DESC bd{};
+	ZeroMemory(&bd, sizeof(bd));
 	bd.Usage = D3D11_USAGE_DEFAULT;
 	bd.ByteWidth = sizeof(VERTEX_3D) * 4;
 	bd.BindFlags = D3D11_BIND_VERTEX_BUFFER;
@@ -58,11 +59,6 @@ void Field::Init()
 	m_Scale = D3DXVECTOR3(1.0f, 1.0f, 1.0f);
 }
 
-void Field::Update()
-{
-
-}
-
 void Field::Uninit()
 {
 	m_VertexBuffer->Release();
@@ -71,6 +67,11 @@ void Field::Uninit()
 	m_VertexLayout->Release();
 	m_VertexShader->Release();
 	m_PixelShader->Release();
+}
+
+void Field::Update()
+{
+
 }
 
 void Field::Draw()
