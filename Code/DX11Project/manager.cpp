@@ -4,10 +4,13 @@
 #include "polygon2D.h"
 #include "field.h"
 #include "camera.h"
+#include "model.h"
+#include "player.h"
 
 Polygon2D* g_pPolygon2D = NULL;
 Field* g_pField = NULL;
 Camera* g_pCamera = NULL;
+Player* g_pPlayer = NULL;
 
 void Manager::Init()
 {
@@ -21,6 +24,9 @@ void Manager::Init()
 
 	g_pCamera = new Camera();
 	g_pCamera->Init();
+
+	g_pPlayer = new Player();
+	g_pPlayer->Init();
 }
 
 
