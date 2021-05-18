@@ -32,6 +32,9 @@ void Manager::Init()
 
 void Manager::Uninit()
 {
+	g_pPlayer->Uninit();
+	delete g_pPlayer;
+
 	g_pCamera->Uninit();
 	delete g_pCamera;
 
@@ -49,6 +52,7 @@ void Manager::Update()
 	g_pCamera->Update();
 	g_pField->Update();
 	g_pPolygon2D->Update();
+	g_pPlayer->Update();
 }
 
 void Manager::Draw()
@@ -57,6 +61,7 @@ void Manager::Draw()
 
 	g_pCamera->Draw();
 	g_pField->Draw();
+	g_pPlayer->Draw();
 	g_pPolygon2D->Draw();
 
 	Renderer::End();
