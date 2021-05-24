@@ -1,11 +1,10 @@
 #pragma once
 
-class Player
+#include "gameObject.h"
+
+class Player : public GameObject
 {
 private:
-	D3DXVECTOR3 m_Position;
-	D3DXVECTOR3 m_Rotation;
-	D3DXVECTOR3 m_Scale;
 	Model* m_Model;
 
 	ID3D11Buffer* m_VertexBuffer = NULL;
