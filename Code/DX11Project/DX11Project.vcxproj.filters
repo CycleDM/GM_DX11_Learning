@@ -5,75 +5,96 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\System">
+      <UniqueIdentifier>{dab6baaf-8c0f-4837-91ec-ce07651ecd0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Scene">
+      <UniqueIdentifier>{417c8b8f-4304-4676-82bc-de546147a8e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameObject">
+      <UniqueIdentifier>{46acd8d9-c9df-49a2-9764-9a5d2b69d9cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shader">
+      <UniqueIdentifier>{d7283aa2-75eb-4904-8610-1a719fc8a8ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="manager.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\System</Filter>
     </ClCompile>
     <ClCompile Include="renderer.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\System</Filter>
     </ClCompile>
-    <ClCompile Include="polygon2D.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="manager.cpp">
+      <Filter>源文件\System</Filter>
     </ClCompile>
     <ClCompile Include="camera.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="field.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="model.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="player.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="polygon2D.cpp">
+      <Filter>源文件\GameObject</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="main.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="scene.h">
+      <Filter>源文件\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="manager.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="main.h">
+      <Filter>源文件\System</Filter>
     </ClInclude>
     <ClInclude Include="renderer.h">
-      <Filter>头文件</Filter>
+      <Filter>源文件\System</Filter>
     </ClInclude>
-    <ClInclude Include="polygon2D.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="manager.h">
+      <Filter>源文件\System</Filter>
     </ClInclude>
     <ClInclude Include="camera.h">
-      <Filter>头文件</Filter>
+      <Filter>源文件\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="field.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="model.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="player.h">
-      <Filter>头文件</Filter>
+      <Filter>源文件\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="gameObject.h">
-      <Filter>头文件</Filter>
+      <Filter>源文件\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>源文件\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>源文件\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="polygon2D.h">
+      <Filter>源文件\GameObject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="unlitTexturePS.hlsl" />
-    <FxCompile Include="unlitTextureVS.hlsl" />
-    <FxCompile Include="vertexLightingPS.hlsl" />
-    <FxCompile Include="vertexLightingVS.hlsl" />
-    <FxCompile Include="common.hlsl" />
+    <FxCompile Include="common.hlsl">
+      <Filter>源文件\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="unlitTexturePS.hlsl">
+      <Filter>源文件\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="unlitTextureVS.hlsl">
+      <Filter>源文件\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="vertexLightingPS.hlsl">
+      <Filter>源文件\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="vertexLightingVS.hlsl">
+      <Filter>源文件\Shader</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>

@@ -3,6 +3,8 @@
 
 class Manager
 {
+private:
+	static class Scene* m_Scene;
 
 public:
 	static void Init();
