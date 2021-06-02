@@ -6,6 +6,8 @@
 *.lo
 *.o
 *.obj
+# 例外
+!Code/DX11Project/asset/model/*.obj
 
 # Precompiled Headers
 *.gch
