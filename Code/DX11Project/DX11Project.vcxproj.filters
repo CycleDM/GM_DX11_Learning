@@ -29,9 +29,6 @@
     <ClCompile Include="renderer.cpp">
       <Filter>源文件\System</Filter>
     </ClCompile>
-    <ClCompile Include="manager.cpp">
-      <Filter>源文件\System</Filter>
-    </ClCompile>
     <ClCompile Include="camera.cpp">
       <Filter>源文件\GameObject</Filter>
     </ClCompile>
@@ -46,6 +43,18 @@
     </ClCompile>
     <ClCompile Include="polygon2D.cpp">
       <Filter>源文件\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy.cpp">
+      <Filter>源文件\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>源文件\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>源文件\System</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>源文件\System</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +87,15 @@
     </ClInclude>
     <ClInclude Include="polygon2D.h">
       <Filter>源文件\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy.h">
+      <Filter>源文件\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>源文件\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>源文件\System</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

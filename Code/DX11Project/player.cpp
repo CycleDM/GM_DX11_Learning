@@ -1,5 +1,9 @@
 #include "main.h"
+#include "manager.h"
 #include "renderer.h"
+#include "input.h"
+#include "scene.h"
+#include "bullet.h"
 #include "model.h"
 #include "player.h"
 
@@ -8,7 +12,7 @@ void Player::Init()
 	m_Model = new Model();
 	m_Model->Load("asset\\model\\torus.obj");
 
-	m_Position = D3DXVECTOR3(0.0f, 1.0f, 0.0f);
+	m_Position = D3DXVECTOR3(0.0f, 1.0f, -3.0f);
 	m_Rotation = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	m_Scale = D3DXVECTOR3(1.0f, 1.0f, 1.0f);
 
@@ -29,7 +33,20 @@ void Player::Uninit()
 
 void Player::Update()
 {
+	if (Input::GetKeyPress('A'))
+	{
+		m_Position.x -= 0.1f;
+	}
+	if (Input::GetKeyPress('D'))
+	{
+		m_Position.x += 0.1f;
+	}
 
+	if (Input::GetKeyTrigger(VK_SPACE))
+	{
+		Scene* scene = Manager::GetScene();
+		scene->AddGameObject<Bullet>();
+	}
 }
 
 void Player::Draw()

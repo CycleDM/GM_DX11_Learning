@@ -15,4 +15,6 @@ public:
 	virtual void Uninit() = 0;
 	virtual void Update() = 0;
 	virtual void Draw() = 0;
+
+	void SetPosition(D3DXVECTOR3 Position) { m_Position = Position; }
 };

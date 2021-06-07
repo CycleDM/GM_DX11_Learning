@@ -7,6 +7,8 @@
 #include "camera.h"
 #include "model.h"
 #include "player.h"
+#include "enemy.h"
+#include "bullet.h"
 
 class Scene
 {
@@ -32,7 +34,14 @@ public:
 		AddGameObject<Camera>();
 		AddGameObject<Field>();
 		AddGameObject<Player>();
-		AddGameObject<Polygon2D>();
+
+		AddGameObject<Enemy>()->SetPosition(D3DXVECTOR3(-3.0f, 1.0f, 5.0f));
+		AddGameObject<Enemy>()->SetPosition(D3DXVECTOR3( 0.0f, 1.0f, 5.0f));
+		AddGameObject<Enemy>()->SetPosition(D3DXVECTOR3( 3.0f, 1.0f, 5.0f));
+
+		//AddGameObject<Bullet>();
+
+		//AddGameObject<Polygon2D>();
 	}
 
 	virtual void Uninit()
