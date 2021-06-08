@@ -1,6 +1,8 @@
 #pragma once
 
 #include <list>
+#include <vector>
+#include <typeinfo>
 #include "gameObject.h"
 #include "polygon2D.h"
 #include "field.h"
@@ -42,6 +44,33 @@ public:
 		//AddGameObject<Bullet>();
 
 		//AddGameObject<Polygon2D>();
+	}
+
+	template <class T>
+	T* GetGameObject()
+	{
+		for (GameObject * object : m_GameObject)
+		{
+			if (typeid(*object) == typeid(T)) // 型を調べる（RTTI動的型情報）
+			{
+				return (T*)object;
+			}
+		}
+		return NULL;
+	}
+
+	template <class T>
+	std::vector<T*> GetGameObjects()
+	{
+		std::vector<T*>objects; // STLの配列
+		for (GameObject* object : m_GameObject)
+		{
+			if (typeid(*object) == typeid(T))
+			{
+				objects.push_back((T*)object);
+			}
+		}
+		return objects;
 	}
 
 	virtual void Uninit()

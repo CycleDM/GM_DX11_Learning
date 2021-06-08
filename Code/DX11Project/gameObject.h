@@ -18,8 +18,8 @@ public:
 	virtual void Update() = 0;
 	virtual void Draw() = 0;
 
+	D3DXVECTOR3 GetPosition() { return m_Position; }
 	void SetPosition(D3DXVECTOR3 Position) { m_Position = Position; }
-
 	void SetDestory() { m_Destroy = true; }
 
 	bool Destroy()

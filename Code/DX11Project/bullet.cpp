@@ -1,6 +1,9 @@
 #include "main.h"
+#include "manager.h"
 #include "renderer.h"
 #include "model.h"
+#include "scene.h"
+#include "enemy.h"
 #include "bullet.h"
 
 void Bullet::Init()
@@ -31,10 +34,28 @@ void Bullet::Update()
 {
 	m_Position.z += 0.1f;
 
-	if (m_Position.z >6.0f)
+	if (m_Position.z > 6.0f)
 	{
 		SetDestory();
 		return;
+	}
+
+	Scene* scene = Manager::GetScene();
+	std::vector<Enemy*> enemyList = scene->GetGameObjects<Enemy>();
+
+	for (Enemy* enemy : enemyList)
+	{
+		D3DXVECTOR3 enemyPosition = enemy->GetPosition();
+
+		D3DXVECTOR3 direction = m_Position - enemyPosition;
+		float length = D3DXVec3Length(&direction);
+
+		if (length < 1.3f)
+		{
+			enemy->SetDestory();
+			SetDestory();
+			return;
+		}
 	}
 }
 
