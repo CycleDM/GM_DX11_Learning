@@ -29,7 +29,13 @@ void Bullet::Uninit()
 
 void Bullet::Update()
 {
+	m_Position.z += 0.1f;
 
+	if (m_Position.z >6.0f)
+	{
+		SetDestory();
+		return;
+	}
 }
 
 void Bullet::Draw()

@@ -59,6 +59,9 @@ public:
 		{
 			object->Update();
 		}
+
+		m_GameObject.remove_if([](GameObject* object) {return object->Destroy(); });
+		// ƒ‰ƒ€ƒ_Ž®
 	}
 
 	virtual void Draw()

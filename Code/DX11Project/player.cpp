@@ -45,7 +45,7 @@ void Player::Update()
 	if (Input::GetKeyTrigger(VK_SPACE))
 	{
 		Scene* scene = Manager::GetScene();
-		scene->AddGameObject<Bullet>();
+		scene->AddGameObject<Bullet>()->SetPosition(m_Position);
 	}
 }
 
