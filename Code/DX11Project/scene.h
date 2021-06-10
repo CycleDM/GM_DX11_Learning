@@ -15,45 +15,33 @@
 class Scene
 {
 protected:
-	std::list<GameObject*> m_GameObject; // STLのリスト構造
+	std::list<GameObject*> m_GameObject[3]; // STLのリスト構造
 
 public:
 	Scene() {}
 	virtual ~Scene() {}
 
 	template <class T> // テンプレート関数
-	T* AddGameObject()
+	T* AddGameObject(int Layer)
 	{
 		T* gameObject = new T();
+		m_GameObject[Layer].push_back(gameObject);
 		gameObject->Init();
-		m_GameObject.push_back(gameObject);
 
 		return gameObject;
-	}
-
-	virtual void Init()
-	{	
-		AddGameObject<Camera>();
-		AddGameObject<Field>();
-		AddGameObject<Player>();
-
-		AddGameObject<Enemy>()->SetPosition(D3DXVECTOR3(-3.0f, 1.0f, 5.0f));
-		AddGameObject<Enemy>()->SetPosition(D3DXVECTOR3( 0.0f, 1.0f, 5.0f));
-		AddGameObject<Enemy>()->SetPosition(D3DXVECTOR3( 3.0f, 1.0f, 5.0f));
-
-		//AddGameObject<Bullet>();
-
-		//AddGameObject<Polygon2D>();
 	}
 
 	template <class T>
 	T* GetGameObject()
 	{
-		for (GameObject * object : m_GameObject)
+		for (int i = 0; i < 3; i++)
 		{
-			if (typeid(*object) == typeid(T)) // 型を調べる（RTTI動的型情報）
+			for (GameObject* object : m_GameObject[i])
 			{
-				return (T*)object;
+				if (typeid(*object) == typeid(T)) // 型を調べる（RTTI動的型情報）
+				{
+					return (T*)object;
+				}
 			}
 		}
 		return NULL;
@@ -63,41 +51,68 @@ public:
 	std::vector<T*> GetGameObjects()
 	{
 		std::vector<T*>objects; // STLの配列
-		for (GameObject* object : m_GameObject)
+		for (int i = 0; i < 3; i++)
 		{
-			if (typeid(*object) == typeid(T))
+			for (GameObject* object : m_GameObject[i])
 			{
-				objects.push_back((T*)object);
+				if (typeid(*object) == typeid(T))
+				{
+					objects.push_back((T*)object);
+				}
 			}
 		}
 		return objects;
 	}
 
+	virtual void Init()
+	{	
+		AddGameObject<Camera>(0);
+		AddGameObject<Field>(1);
+		AddGameObject<Player>(1);
+
+		AddGameObject<Enemy>(1)->SetPosition(D3DXVECTOR3(-3.0f, 1.0f, 5.0f));
+		AddGameObject<Enemy>(1)->SetPosition(D3DXVECTOR3( 0.0f, 1.0f, 5.0f));
+		AddGameObject<Enemy>(1)->SetPosition(D3DXVECTOR3( 3.0f, 1.0f, 5.0f));
+
+		//AddGameObject<Bullet>();
+
+		AddGameObject<Polygon2D>(2);
+	}
+
 	virtual void Uninit()
 	{
-		for (GameObject* object : m_GameObject)
+		for (int i = 0; i < 3; i++)
 		{
-			object->Uninit();
-			delete object;
+			for (GameObject* object : m_GameObject[i])
+			{
+				object->Uninit();
+				delete object;
+			}
 		}
 	}
 
 	virtual void Update()
 	{
-		for (GameObject* object : m_GameObject)
+		for (int i = 0; i < 3; i++)
 		{
-			object->Update();
+			for (GameObject* object : m_GameObject[i])
+			{
+				object->Update();
+			}
 		}
 
-		m_GameObject.remove_if([](GameObject* object) { return object->Destroy(); });
+		m_GameObject[1].remove_if([](GameObject* object) { return object->Destroy(); });
 		// ラムダ式
 	}
 
 	virtual void Draw()
 	{
-		for (GameObject* object : m_GameObject)
+		for (int i = 0; i < 3; i++)
 		{
-			object->Draw();
+			for (GameObject* object : m_GameObject[i])
+			{
+				object->Draw();
+			}
 		}
 	}
 };
