@@ -89,7 +89,7 @@ public:
 			object->Update();
 		}
 
-		m_GameObject.remove_if([](GameObject* object) {return object->Destroy(); });
+		m_GameObject.remove_if([](GameObject* object) { return object->Destroy(); });
 		// ƒ‰ƒ€ƒ_Ž®
 	}
 

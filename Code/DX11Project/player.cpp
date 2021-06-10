@@ -33,6 +33,14 @@ void Player::Uninit()
 
 void Player::Update()
 {
+	if (Input::GetKeyPress('W'))
+	{
+		m_Position.z += 0.1f;
+	}
+	if (Input::GetKeyPress('S'))
+	{
+		m_Position.z -= 0.1f;
+	}
 	if (Input::GetKeyPress('A'))
 	{
 		m_Position.x -= 0.1f;
