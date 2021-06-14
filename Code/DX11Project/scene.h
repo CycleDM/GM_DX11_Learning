@@ -74,8 +74,6 @@ public:
 		AddGameObject<Enemy>(1)->SetPosition(D3DXVECTOR3( 0.0f, 1.0f, 5.0f));
 		AddGameObject<Enemy>(1)->SetPosition(D3DXVECTOR3( 3.0f, 1.0f, 5.0f));
 
-		//AddGameObject<Bullet>();
-
 		AddGameObject<Polygon2D>(2);
 	}
 

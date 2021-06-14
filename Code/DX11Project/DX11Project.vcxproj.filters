@@ -1,118 +1,114 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
+    <Filter Include="Source">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="源文件\System">
+    <Filter Include="Source\System">
       <UniqueIdentifier>{dab6baaf-8c0f-4837-91ec-ce07651ecd0b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\Scene">
+    <Filter Include="Source\Scene">
       <UniqueIdentifier>{417c8b8f-4304-4676-82bc-de546147a8e3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\GameObject">
+    <Filter Include="Source\GameObject">
       <UniqueIdentifier>{46acd8d9-c9df-49a2-9764-9a5d2b69d9cf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\Shader">
+    <Filter Include="Source\Shader">
       <UniqueIdentifier>{d7283aa2-75eb-4904-8610-1a719fc8a8ce}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>源文件\System</Filter>
+      <Filter>Source\System</Filter>
     </ClCompile>
     <ClCompile Include="renderer.cpp">
-      <Filter>源文件\System</Filter>
+      <Filter>Source\System</Filter>
     </ClCompile>
     <ClCompile Include="camera.cpp">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="field.cpp">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="model.cpp">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="player.cpp">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="polygon2D.cpp">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="enemy.cpp">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="bullet.cpp">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="manager.cpp">
-      <Filter>源文件\System</Filter>
+      <Filter>Source\System</Filter>
     </ClCompile>
     <ClCompile Include="input.cpp">
-      <Filter>源文件\System</Filter>
+      <Filter>Source\System</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="scene.h">
-      <Filter>源文件\Scene</Filter>
+      <Filter>Source\Scene</Filter>
     </ClInclude>
     <ClInclude Include="main.h">
-      <Filter>源文件\System</Filter>
+      <Filter>Source\System</Filter>
     </ClInclude>
     <ClInclude Include="renderer.h">
-      <Filter>源文件\System</Filter>
+      <Filter>Source\System</Filter>
     </ClInclude>
     <ClInclude Include="manager.h">
-      <Filter>源文件\System</Filter>
+      <Filter>Source\System</Filter>
     </ClInclude>
     <ClInclude Include="camera.h">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="field.h">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="gameObject.h">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="model.h">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="player.h">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="polygon2D.h">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="enemy.h">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="bullet.h">
-      <Filter>源文件\GameObject</Filter>
+      <Filter>Source\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="input.h">
-      <Filter>源文件\System</Filter>
+      <Filter>Source\System</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="common.hlsl">
-      <Filter>源文件\Shader</Filter>
+      <Filter>Source\Shader</Filter>
     </FxCompile>
     <FxCompile Include="unlitTexturePS.hlsl">
-      <Filter>源文件\Shader</Filter>
+      <Filter>Source\Shader</Filter>
     </FxCompile>
     <FxCompile Include="unlitTextureVS.hlsl">
-      <Filter>源文件\Shader</Filter>
+      <Filter>Source\Shader</Filter>
     </FxCompile>
     <FxCompile Include="vertexLightingPS.hlsl">
-      <Filter>源文件\Shader</Filter>
+      <Filter>Source\Shader</Filter>
     </FxCompile>
     <FxCompile Include="vertexLightingVS.hlsl">
-      <Filter>源文件\Shader</Filter>
+      <Filter>Source\Shader</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
