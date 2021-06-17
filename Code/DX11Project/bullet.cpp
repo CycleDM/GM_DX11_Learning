@@ -6,11 +6,22 @@
 #include "enemy.h"
 #include "bullet.h"
 
-void Bullet::Init()
+Model* Bullet::m_Model;	// スタティックメンバー変数はcppで再度宣言が必要
+
+void Bullet::Load()
 {
 	m_Model = new Model();
 	m_Model->Load("asset\\model\\torus.obj");
+}
 
+void Bullet::Unload()
+{
+	m_Model->Unload();
+	delete m_Model;
+}
+
+void Bullet::Init()
+{
 	m_Position = D3DXVECTOR3(0.0f, 1.0f, 0.0f);
 	m_Rotation = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	m_Scale = D3DXVECTOR3(0.2f, 0.2f, 0.2f);
@@ -22,9 +33,6 @@ void Bullet::Init()
 
 void Bullet::Uninit()
 {
-	m_Model->Unload();
-	delete m_Model;
-
 	m_VertexLayout->Release();
 	m_VertexShader->Release();
 	m_PixelShader->Release();

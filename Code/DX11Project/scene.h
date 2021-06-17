@@ -66,6 +66,8 @@ public:
 
 	virtual void Init()
 	{	
+		Bullet::Load();
+
 		AddGameObject<Camera>(0);
 		AddGameObject<Field>(1);
 		AddGameObject<Player>(1);
@@ -87,6 +89,8 @@ public:
 				delete object;
 			}
 		}
+
+		Bullet::Unload();
 	}
 
 	virtual void Update()

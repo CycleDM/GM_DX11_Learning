@@ -5,7 +5,7 @@
 class Bullet : public GameObject
 {
 private:
-	Model* m_Model;
+	static Model* m_Model;
 
 	ID3D11Buffer* m_VertexBuffer = NULL;
 	ID3D11ShaderResourceView* m_Texture = NULL;
@@ -15,6 +15,9 @@ private:
 	ID3D11InputLayout* m_VertexLayout = NULL;
 
 public:
+	static void Load();
+	static void Unload();
+
 	void Init();
 	void Uninit();
 	void Update();

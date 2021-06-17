@@ -1,5 +1,4 @@
 ﻿  bullet.cpp
   manager.cpp
   player.cpp
-  LINK : 前回のインクリメンタル リンクで C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\x64\Debug\DX11Project.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
-  DX11Project.vcxproj -> C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\x64\Debug\DX11Project.exe
+  DX11Project.vcxproj -> C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\x64\Debug\DX11Project.exe
