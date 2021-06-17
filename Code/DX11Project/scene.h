@@ -67,6 +67,7 @@ public:
 	virtual void Init()
 	{	
 		Bullet::Load();
+		Enemy::Load();
 
 		AddGameObject<Camera>(0);
 		AddGameObject<Field>(1);
@@ -90,6 +91,7 @@ public:
 			}
 		}
 
+		Enemy::Unload();
 		Bullet::Unload();
 	}
 

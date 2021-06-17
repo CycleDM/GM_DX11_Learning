@@ -7,17 +7,27 @@
 #include "bullet.h"
 
 Model* Bullet::m_Model;	// スタティックメンバー変数はcppで再度宣言が必要
+ID3D11VertexShader* Bullet::m_VertexShader = NULL;
+ID3D11PixelShader* Bullet::m_PixelShader = NULL;
+ID3D11InputLayout* Bullet::m_VertexLayout = NULL;
 
 void Bullet::Load()
 {
 	m_Model = new Model();
 	m_Model->Load("asset\\model\\torus.obj");
+
+	Renderer::CreateVertexShader(&m_VertexShader, &m_VertexLayout, "vertexLightingVS.cso");
+	Renderer::CreatePixelShader(&m_PixelShader, "vertexLightingPS.cso");
 }
 
 void Bullet::Unload()
 {
 	m_Model->Unload();
 	delete m_Model;
+
+	m_VertexLayout->Release();
+	m_VertexShader->Release();
+	m_PixelShader->Release();
 }
 
 void Bullet::Init()
@@ -25,17 +35,10 @@ void Bullet::Init()
 	m_Position = D3DXVECTOR3(0.0f, 1.0f, 0.0f);
 	m_Rotation = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	m_Scale = D3DXVECTOR3(0.2f, 0.2f, 0.2f);
-
-	Renderer::CreateVertexShader(&m_VertexShader, &m_VertexLayout, "vertexLightingVS.cso");
-
-	Renderer::CreatePixelShader(&m_PixelShader, "vertexLightingPS.cso");
 }
 
 void Bullet::Uninit()
 {
-	m_VertexLayout->Release();
-	m_VertexShader->Release();
-	m_PixelShader->Release();
 }
 
 void Bullet::Update()
