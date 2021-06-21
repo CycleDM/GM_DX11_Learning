@@ -11,6 +11,7 @@
 #include "player.h"
 #include "enemy.h"
 #include "bullet.h"
+#include "explosion.h"
 
 class Scene
 {
@@ -76,6 +77,8 @@ public:
 		AddGameObject<Enemy>(1)->SetPosition(D3DXVECTOR3(-3.0f, 1.0f, 5.0f));
 		AddGameObject<Enemy>(1)->SetPosition(D3DXVECTOR3( 0.0f, 1.0f, 5.0f));
 		AddGameObject<Enemy>(1)->SetPosition(D3DXVECTOR3( 3.0f, 1.0f, 5.0f));
+
+		AddGameObject<Explosion>(1);
 
 		AddGameObject<Polygon2D>(2);
 	}

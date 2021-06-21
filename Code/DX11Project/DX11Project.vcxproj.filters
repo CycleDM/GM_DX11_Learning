@@ -52,6 +52,9 @@
     <ClCompile Include="input.cpp">
       <Filter>Source\System</Filter>
     </ClCompile>
+    <ClCompile Include="explosion.cpp">
+      <Filter>Source\GameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="scene.h">
@@ -92,6 +95,9 @@
     </ClInclude>
     <ClInclude Include="input.h">
       <Filter>Source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="explosion.h">
+      <Filter>Source\GameObject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

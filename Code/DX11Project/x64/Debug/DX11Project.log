@@ -1,3 +1,6 @@
 ﻿  bullet.cpp
-  enemy.cpp
+  camera.cpp
+  explosion.cpp
+  manager.cpp
+  player.cpp
   DX11Project.vcxproj -> C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\x64\Debug\DX11Project.exe

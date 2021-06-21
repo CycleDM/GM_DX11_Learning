@@ -22,11 +22,11 @@ void Camera::Update()
 void Camera::Draw()
 {
 	// ビューマトリクス設定
-	D3DXMATRIX viewMatrix;
+	//D3DXMATRIX viewMatrix;
 	D3DXVECTOR3 up = D3DXVECTOR3(0.0f, 1.0f, 0.0f);
-	D3DXMatrixLookAtLH(&viewMatrix, &m_Position, &m_Target, &up);
+	D3DXMatrixLookAtLH(&m_ViewMatrix, &m_Position, &m_Target, &up);
 
-	Renderer::SetViewMatrix(&viewMatrix);
+	Renderer::SetViewMatrix(&m_ViewMatrix);
 
 	// プロジェクションマトリクス設定
 	D3DXMATRIX projectionMatrix;
