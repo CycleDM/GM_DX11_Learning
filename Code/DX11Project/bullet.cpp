@@ -63,6 +63,8 @@ void Bullet::Update()
 
 		if (length < 1.3f)
 		{
+			scene->AddGameObject<Explosion>(1)->SetPosition(enemyPosition);
+
 			enemy->SetDestory();
 			SetDestory();
 			return;

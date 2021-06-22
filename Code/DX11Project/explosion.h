@@ -12,6 +12,8 @@ private:
 	ID3D11PixelShader* m_PixelShader;
 	ID3D11InputLayout* m_VertexLayout;
 
+	int m_Count;
+
 public:
 	void Init();
 	void Uninit();
