@@ -2,6 +2,7 @@
 #include "renderer.h"
 #include "manager.h"
 #include "camera.h"
+#include "scene.h"
 
 void Camera::Init()
 {
@@ -16,7 +17,15 @@ void Camera::Uninit()
 
 void Camera::Update()
 {
+	Player* player = Manager::GetScene()->GetGameObject<Player>();
+	m_Target = player->GetPosition();
 
+	// トップビュー
+	//m_Position = m_Target + D3DXVECTOR3(0.0f, 5.0f, -8.0f);
+
+	// サードパーソンビュー
+	D3DXVECTOR3 forward = player->GetForward();
+	m_Position = m_Target - forward * 5.0f + D3DXVECTOR3(0.0f, 3.0f, 0.0f);
 }
 
 void Camera::Draw()

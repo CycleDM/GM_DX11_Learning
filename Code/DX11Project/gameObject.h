@@ -20,6 +20,21 @@ public:
 
 	D3DXVECTOR3 GetPosition() { return m_Position; }
 	void SetPosition(D3DXVECTOR3 Position) { m_Position = Position; }
+
+	D3DXVECTOR3 GetForward()// 全方向ベクトル取得
+	{
+		D3DXMATRIX rot;
+		D3DXMatrixRotationYawPitchRoll(&rot,
+			m_Rotation.y, m_Rotation.x, m_Rotation.z);
+
+		D3DXVECTOR3 forward;
+		forward.x = rot._31;
+		forward.y = rot._32;
+		forward.z = rot._33;
+
+		return forward;
+	}
+
 	void SetDestory() { m_Destroy = true; }
 
 	bool Destroy()

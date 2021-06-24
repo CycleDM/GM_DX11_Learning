@@ -33,21 +33,23 @@ void Player::Uninit()
 
 void Player::Update()
 {
-	if (Input::GetKeyPress('W'))
-	{
-		m_Position.z += 0.1f;
-	}
-	if (Input::GetKeyPress('S'))
-	{
-		m_Position.z -= 0.1f;
-	}
 	if (Input::GetKeyPress('A'))
 	{
-		m_Position.x -= 0.1f;
+		m_Rotation.y -= 0.1f;
 	}
 	if (Input::GetKeyPress('D'))
 	{
-		m_Position.x += 0.1f;
+		m_Rotation.y += 0.1f;
+	}
+
+	D3DXVECTOR3 forward = GetForward();
+	if (Input::GetKeyPress('W'))
+	{
+		m_Position += forward * 0.1f;
+	}
+	if (Input::GetKeyPress('S'))
+	{
+		m_Position -= forward * 0.1f;
 	}
 
 	if (Input::GetKeyTrigger(VK_SPACE))
