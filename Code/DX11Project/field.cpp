@@ -43,7 +43,7 @@ void Field::Init()
 
 	D3DX11CreateShaderResourceViewFromFile(
 		Renderer::GetDevice(),
-		"asset/texture/grass.jpg",
+		"asset/texture/floor.jpg",
 		NULL,
 		NULL,
 		&m_Texture,
