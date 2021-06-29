@@ -41,7 +41,7 @@ void Polygon2D::Init()
 
 	D3DX11CreateShaderResourceViewFromFile(
 		Renderer::GetDevice(), 
-		"asset/texture/CycleDM.jpg", 
+		"asset/texture/foods.png", 
 		NULL, 
 		NULL, 
 		&m_Texture, 
