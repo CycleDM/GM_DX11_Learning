@@ -1,6 +1,7 @@
 
 
 #include "main.h"
+#include "scene.h"
 #include "manager.h"
 
 

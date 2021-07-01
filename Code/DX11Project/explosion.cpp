@@ -1,9 +1,9 @@
 #include "main.h"
+#include "scene.h"
+#include "manager.h"
 #include "renderer.h"
 #include "explosion.h"
-#include "manager.h"
-#include "scene.h"
-
+#include "camera.h"
 
 void Explosion::Init()
 {

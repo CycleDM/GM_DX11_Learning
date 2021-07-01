@@ -1,8 +1,9 @@
 #include "main.h"
-#include "renderer.h"
-#include "manager.h"
-#include "camera.h"
 #include "scene.h"
+#include "manager.h"
+#include "renderer.h"
+#include "camera.h"
+#include "player.h"
 
 void Camera::Init()
 {

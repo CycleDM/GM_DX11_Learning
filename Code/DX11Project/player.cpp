@@ -1,10 +1,9 @@
 #include "main.h"
+#include "scene.h"
 #include "manager.h"
 #include "renderer.h"
 #include "input.h"
-#include "scene.h"
 #include "bullet.h"
-#include "model.h"
 #include "player.h"
 
 void Player::Init()

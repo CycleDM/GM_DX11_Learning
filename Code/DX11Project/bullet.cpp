@@ -1,10 +1,10 @@
 #include "main.h"
+#include "scene.h"
 #include "manager.h"
 #include "renderer.h"
-#include "model.h"
-#include "scene.h"
 #include "enemy.h"
 #include "bullet.h"
+#include "explosion.h"
 
 Model* Bullet::m_Model;	// スタティックメンバー変数はcppで再度宣言が必要
 ID3D11VertexShader* Bullet::m_VertexShader = NULL;

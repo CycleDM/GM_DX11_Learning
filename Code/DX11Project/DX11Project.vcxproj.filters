@@ -58,6 +58,15 @@
     <ClCompile Include="sky.cpp">
       <Filter>Source\GameObject</Filter>
     </ClCompile>
+    <ClCompile Include="title.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="titleLogo.cpp">
+      <Filter>Source\GameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="scene.h">
@@ -103,6 +112,15 @@
       <Filter>Source\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="sky.h">
+      <Filter>Source\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="title.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="titleLogo.h">
       <Filter>Source\GameObject</Filter>
     </ClInclude>
   </ItemGroup>

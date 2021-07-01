@@ -1,18 +1,19 @@
 #include "main.h"
+#include "scene.h"
 #include "manager.h"
 #include "renderer.h"
 #include "input.h"
-#include "scene.h"
+#include "game.h"
+#include "title.h"
 
-class Scene* Manager::m_Scene;
+Scene* Manager::m_Scene = NULL;
 
 void Manager::Init()
 {
 	Renderer::Init();
 	Input::Init();
 
-	m_Scene = new Scene();
-	m_Scene->Init();
+	SetScene<Title>();
 }
 
 

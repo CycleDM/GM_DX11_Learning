@@ -160,6 +160,7 @@
     <ClCompile Include="enemy.cpp" />
     <ClCompile Include="explosion.cpp" />
     <ClCompile Include="field.cpp" />
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="input.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="manager.cpp" />
@@ -168,6 +169,8 @@
     <ClCompile Include="polygon2D.cpp" />
     <ClCompile Include="renderer.cpp" />
     <ClCompile Include="sky.cpp" />
+    <ClCompile Include="title.cpp" />
+    <ClCompile Include="titleLogo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bullet.h" />
@@ -175,6 +178,7 @@
     <ClInclude Include="enemy.h" />
     <ClInclude Include="explosion.h" />
     <ClInclude Include="field.h" />
+    <ClInclude Include="game.h" />
     <ClInclude Include="gameObject.h" />
     <ClInclude Include="input.h" />
     <ClInclude Include="main.h" />
@@ -185,6 +189,8 @@
     <ClInclude Include="renderer.h" />
     <ClInclude Include="scene.h" />
     <ClInclude Include="sky.h" />
+    <ClInclude Include="title.h" />
+    <ClInclude Include="titleLogo.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="common.hlsl">
