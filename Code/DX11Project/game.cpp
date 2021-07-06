@@ -11,6 +11,7 @@
 #include "enemy.h"
 #include "bullet.h"
 #include "explosion.h"
+#include "audio.h"
 
 void Game::Init()
 {
@@ -27,6 +28,10 @@ void Game::Init()
 	AddGameObject<Enemy>(1)->SetPosition(D3DXVECTOR3(3.0f, 1.0f, 5.0f));
 
 	AddGameObject<Polygon2D>(2);
+
+	Audio* bgm = AddGameObject<Audio>(2);
+	bgm->Load("asset\\audio\\bgm.wav");
+	bgm->Play(true);
 }
 
 void Game::Uninit()

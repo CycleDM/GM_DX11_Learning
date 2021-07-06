@@ -3,6 +3,7 @@
 #include "manager.h"
 #include "renderer.h"
 #include "input.h"
+#include "audio.h"
 #include "game.h"
 #include "title.h"
 
@@ -12,6 +13,7 @@ void Manager::Init()
 {
 	Renderer::Init();
 	Input::Init();
+	Audio::InitMaster();
 
 	SetScene<Title>();
 }
@@ -22,6 +24,7 @@ void Manager::Uninit()
 	m_Scene->Uninit();
 	delete m_Scene;
 
+	Audio::UninitMaster();
 	Input::Uninit();
 	Renderer::Uninit();
 }

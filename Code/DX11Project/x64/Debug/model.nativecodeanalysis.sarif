@@ -1,0 +1,4092 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXFLOAT16::value。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 5,
+                  "endLine": 59,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXFLOAT16@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXFLOAT16::value"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXVECTOR2::y。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 5,
+                  "endLine": 91,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR2@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR2::y"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXVECTOR2::x。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 5,
+                  "endLine": 91,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR2@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR2::x"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXVECTOR4::z。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 240,
+                  "startColumn": 5,
+                  "endLine": 240,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::z"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXVECTOR4::x。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 240,
+                  "startColumn": 5,
+                  "endLine": 240,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::x"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXVECTOR4::w。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 240,
+                  "startColumn": 5,
+                  "endLine": 240,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::w"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXVECTOR4::y。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 240,
+                  "startColumn": 5,
+                  "endLine": 240,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::y"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXQUATERNION::w。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 429,
+                  "startColumn": 5,
+                  "endLine": 429,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::w"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXQUATERNION::y。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 429,
+                  "startColumn": 5,
+                  "endLine": 429,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::y"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXQUATERNION::z。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 429,
+                  "startColumn": 5,
+                  "endLine": 429,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::z"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXQUATERNION::x。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 429,
+                  "startColumn": 5,
+                  "endLine": 429,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::x"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXPLANE::d。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 475,
+                  "startColumn": 5,
+                  "endLine": 475,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::d"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXPLANE::b。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 475,
+                  "startColumn": 5,
+                  "endLine": 475,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::b"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXPLANE::c。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 475,
+                  "startColumn": 5,
+                  "endLine": 475,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::c"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXPLANE::a。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 475,
+                  "startColumn": 5,
+                  "endLine": 475,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::a"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXCOLOR::a。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 516,
+                  "startColumn": 5,
+                  "endLine": 516,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::a"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXCOLOR::g。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 516,
+                  "startColumn": 5,
+                  "endLine": 516,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::g"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXCOLOR::b。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 516,
+                  "startColumn": 5,
+                  "endLine": 516,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::b"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXCOLOR::r。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+                },
+                "region": {
+                  "startLine": 516,
+                  "startColumn": 5,
+                  "endLine": 516,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::r"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXFLOAT16::value。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 14,
+                  "endLine": 26,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXFLOAT16@@QEAA@M@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXFLOAT16::value"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXVECTOR2::y。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 14,
+                  "endLine": 77,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR2@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR2::y"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXVECTOR4::z。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 517,
+                  "startColumn": 14,
+                  "endLine": 517,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::z"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXVECTOR4::w。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 517,
+                  "startColumn": 14,
+                  "endLine": 517,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::w"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXVECTOR4::y。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 517,
+                  "startColumn": 14,
+                  "endLine": 517,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::y"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXQUATERNION::w。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 1068,
+                  "startColumn": 17,
+                  "endLine": 1068,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::w"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXQUATERNION::y。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 1068,
+                  "startColumn": 17,
+                  "endLine": 1068,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::y"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXQUATERNION::z。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 1068,
+                  "startColumn": 17,
+                  "endLine": 1068,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::z"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXPLANE::d。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 1241,
+                  "startColumn": 12,
+                  "endLine": 1241,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::d"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXPLANE::b。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 1241,
+                  "startColumn": 12,
+                  "endLine": 1241,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::b"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXPLANE::c。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 1241,
+                  "startColumn": 12,
+                  "endLine": 1241,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::c"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXCOLOR::a。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 1376,
+                  "startColumn": 12,
+                  "endLine": 1376,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::a"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXCOLOR::g。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 1376,
+                  "startColumn": 12,
+                  "endLine": 1376,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::g"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 D3DXCOLOR::b。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+                },
+                "region": {
+                  "startLine": 1376,
+                  "startColumn": 12,
+                  "endLine": 1376,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QEAA@PEBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::b"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 MATERIAL::Dummy。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/renderer.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 1,
+                  "endLine": 25,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0MATERIAL@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "MATERIAL::Dummy"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 MATERIAL::Shininess。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/renderer.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 1,
+                  "endLine": 25,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0MATERIAL@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "MATERIAL::Shininess"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 MODEL_MATERIAL::TextureName。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endLine": 13,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0MODEL_MATERIAL@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "MODEL_MATERIAL::TextureName"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 MODEL_MATERIAL::Name。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endLine": 13,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0MODEL_MATERIAL@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "MODEL_MATERIAL::Name"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 MODEL_MATERIAL::Texture。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endLine": 13,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0MODEL_MATERIAL@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "MODEL_MATERIAL::Texture"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 SUBSET::StartIndex。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 1,
+                  "endLine": 22,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0SUBSET@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "SUBSET::StartIndex"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 SUBSET::IndexNum。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 1,
+                  "endLine": 22,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0SUBSET@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "SUBSET::IndexNum"
+          }
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 180,
+                  "startColumn": 3,
+                  "endLine": 180,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 207,
+                  "startColumn": 5,
+                  "endLine": 207,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 255,
+                  "startColumn": 3,
+                  "endLine": 255,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 263,
+                  "startColumn": 4,
+                  "endLine": 263,
+                  "endColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 275,
+                  "startColumn": 4,
+                  "endLine": 275,
+                  "endColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 280,
+                  "startColumn": 4,
+                  "endLine": 280,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 281,
+                  "startColumn": 4,
+                  "endLine": 281,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 282,
+                  "startColumn": 4,
+                  "endLine": 282,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 288,
+                  "startColumn": 4,
+                  "endLine": 288,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 289,
+                  "startColumn": 4,
+                  "endLine": 289,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 290,
+                  "startColumn": 4,
+                  "endLine": 290,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 296,
+                  "startColumn": 4,
+                  "endLine": 296,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 297,
+                  "startColumn": 4,
+                  "endLine": 297,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 304,
+                  "startColumn": 4,
+                  "endLine": 304,
+                  "endColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 334,
+                  "startColumn": 5,
+                  "endLine": 334,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6054",
+          "message": {
+            "text": "可能没有为字符串“str”添加字符串零终止符。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 185,
+                  "startColumn": 7,
+                  "endLine": 185,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadObj@Model@@AEAAXPEBDPEAUMODEL@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 143,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 144,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 145,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 151,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 152,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 153,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 155,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 156,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 157,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 158,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 159,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 160,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 161,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 163,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 164,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 166,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "此表达式不能为“str”添加字符串零终止符"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 167,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 168,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 171,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 172,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 173,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“!!((file))”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 178,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“1”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 180,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "“str”是“fscanf”中的输出(在 c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\ucrt\\stdio.h:1197 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 182,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“feof(file)!=0”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 185,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "“str”是对“strcmp”的输入(在 c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\ucrt\\string.h:100 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 185,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "“str”必须由“strcmp”上的 SAL 批注添加字符串零终止符"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 408,
+                  "startColumn": 3,
+                  "endLine": 408,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 432,
+                  "startColumn": 3,
+                  "endLine": 432,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 442,
+                  "startColumn": 4,
+                  "endLine": 442,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 453,
+                  "startColumn": 4,
+                  "endLine": 453,
+                  "endColumn": 61
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 454,
+                  "startColumn": 4,
+                  "endLine": 454,
+                  "endColumn": 61
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 455,
+                  "startColumn": 4,
+                  "endLine": 455,
+                  "endColumn": 61
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 461,
+                  "startColumn": 4,
+                  "endLine": 461,
+                  "endColumn": 61
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 462,
+                  "startColumn": 4,
+                  "endLine": 462,
+                  "endColumn": 61
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 463,
+                  "startColumn": 4,
+                  "endLine": 463,
+                  "endColumn": 61
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 469,
+                  "startColumn": 4,
+                  "endLine": 469,
+                  "endColumn": 62
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 470,
+                  "startColumn": 4,
+                  "endLine": 470,
+                  "endColumn": 62
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 471,
+                  "startColumn": 4,
+                  "endLine": 471,
+                  "endColumn": 62
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 477,
+                  "startColumn": 4,
+                  "endLine": 477,
+                  "endColumn": 53
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 482,
+                  "startColumn": 4,
+                  "endLine": 482,
+                  "endColumn": 61
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “fscanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 487,
+                  "startColumn": 4,
+                  "endLine": 487,
+                  "endColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6054",
+          "message": {
+            "text": "可能没有为字符串“str”添加字符串零终止符。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 414,
+                  "startColumn": 7,
+                  "endLine": 414,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 390,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 391,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 392,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 396,
+                            "startColumn": 7
+                          }
+                        },
+                        "message": {
+                          "text": "此表达式不能为“str”添加字符串零终止符"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 398,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 399,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 400,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“!!((file))”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 402,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 403,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 406,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“1”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 408,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "“str”是“fscanf”中的输出(在 c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\ucrt\\stdio.h:1197 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 410,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“feof(file)!=0”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 414,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "“str”是对“strcmp”的输入(在 c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\ucrt\\string.h:100 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 414,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "“str”必须由“strcmp”上的 SAL 批注添加字符串零终止符"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "从“materialArray”中读取的数据无效: 可读大小为“(unsigned __int64 size_t)*600”个字节，但可能读取了“1200”个字节。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 442,
+                  "startColumn": 4,
+                  "endLine": 442,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 390,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 391,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 392,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 396,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 398,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 399,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 400,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 402,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 403,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 406,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 408,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 410,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 422,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "“materialArray”是一个 脏值(192641564) 字节数组"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 426,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 428,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 430,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“1”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 432,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 434,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“feof(file)!=0”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 438,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“strcmp(str, \"newmtl\")==0”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 441,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 442,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 443,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 445,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 446,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 447,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 448,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 430,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "继续此循环(假定“1”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 432,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 434,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“feof(file)!=0”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 438,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“strcmp(str, \"newmtl\")==0”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 441,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“mc”可能等于 1"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 442,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "“mc”是“fscanf”中的输出(在 c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\ucrt\\stdio.h:1197 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 442,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "从“materialArray”中读取无效(位于其可读范围之外)"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "写入到“materialArray”时缓冲区溢出: 可写大小为“(unsigned __int64 size_t)*600”个字节，但可能写入了“1200”个字节。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                },
+                "region": {
+                  "startLine": 445,
+                  "startColumn": 4,
+                  "endLine": 445,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?LoadMaterial@Model@@AEAAXPEBDPEAPEAUMODEL_MATERIAL@@PEAI@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 390,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 391,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 392,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 396,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 398,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 399,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 400,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 402,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 403,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 406,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 408,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 410,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 422,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "“materialArray”是一个 脏值(192641564) 字节数组"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 426,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 428,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 430,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“1”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 432,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 434,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“feof(file)!=0”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 438,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“strcmp(str, \"newmtl\")==0”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 441,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 442,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 443,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 445,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 446,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 447,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 448,
+                            "startColumn": 42
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 430,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "继续此循环(假定“1”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 432,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 434,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“feof(file)!=0”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 438,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“strcmp(str, \"newmtl\")==0”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 441,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“mc”可能等于 1"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 442,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "“mc”是“fscanf”中的输出(在 c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\ucrt\\stdio.h:1197 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 443,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "“mc”是“strcpy”中的输出(在 c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\ucrt\\string.h:133 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+                          },
+                          "region": {
+                            "startLine": 445,
+                            "startColumn": 42
+                          }
+                        },
+                        "message": {
+                          "text": "写入到“materialArray”无效(位于其可写范围之外)"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30038.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0079C1C0 -il C:\\Users\\CycleDM\\AppData\\Local\\Temp\\_CL_0de79e09ast -typedil -f model.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930038 -D_MSC_BUILD=1 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -D_DEBUG -D_WINDOWS -D_MBCS -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MTd -clrNoPureCRT -D_DEBUG -D_MT -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -Fox64\\Debug\\model.obj -Fdx64\\Debug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory C:\\Users\\CycleDM\\OneDrive\\Projects\\GM31\\GM_DX11_Learning\\Code\\DX11Project -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -external:I C:\\Users\\CycleDM\\OneDrive\\Projects\\GM31\\GM_DX11_Learning\\Code\\DX11Project\\Include\\um -I C:\\Users\\CycleDM\\OneDrive\\Projects\\GM31\\GM_DX11_Learning\\Code\\DX11Project\\Include\\um -I C:\\Program Files (x86)\\Microsoft DirectX SDK (June 2010)\\Include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Users\\CycleDM\\OneDrive\\Projects\\GM31\\GM_DX11_Learning\\Code\\DX11Project\\Include\\um -MPdiagMutex 00000000000001B8",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "deec5e74fb66ffca6cb49f5e225983bb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include/d3dx9math.inl"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "ca4ba28fa34ec97fd50fc5b184687363"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/renderer.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "cc4dc76466eea24c6d4997991a8b4a40"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "29abc58a548b0e970109c46c59f6eada"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/CycleDM/OneDrive/Projects/GM31/GM_DX11_Learning/Code/DX11Project/model.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "6cd549288ec31452391d9d794743e335"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/cycledm/onedrive/projects/gm31/gm_dx11_learning/code/dx11project/main.h"
+          },
+          "hashes": {
+            "md5": "82edf535c75b752c0a54a1ab705a9204"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx9.h"
+          },
+          "hashes": {
+            "md5": "d296189c1d761aa0e1c2daf3b8b592b9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3d9.h"
+          },
+          "hashes": {
+            "md5": "05da735f3db2fe7524da8988539ced99"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3d9types.h"
+          },
+          "hashes": {
+            "md5": "8e48f8449e75f4f6035595516c31ec58"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3d9caps.h"
+          },
+          "hashes": {
+            "md5": "2cf8710501d6c3aed8ebf7042df8bb21"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx9core.h"
+          },
+          "hashes": {
+            "md5": "39a4bd98e0e9d22ba9d51dac286662b9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx9xof.h"
+          },
+          "hashes": {
+            "md5": "b338de250ff8747b0fac4a0f567a7d3c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx9mesh.h"
+          },
+          "hashes": {
+            "md5": "2de6f4320e7eb78f536e29bf27bc3445"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx9shader.h"
+          },
+          "hashes": {
+            "md5": "fc510418305749392ea05d614300b074"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx9effect.h"
+          },
+          "hashes": {
+            "md5": "d23677a843bbc1588ee1da62b56a5ccc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx9tex.h"
+          },
+          "hashes": {
+            "md5": "cbf7dc6a3522b1509ade6278f8ff00c5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx9shape.h"
+          },
+          "hashes": {
+            "md5": "de5f515b74b8472c5283d840c8327143"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx9anim.h"
+          },
+          "hashes": {
+            "md5": "3c2501eaff09346d6c30086d8eb2c6c9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx11.h"
+          },
+          "hashes": {
+            "md5": "39b3cc335e951bd472bcfb4503d2f645"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3d11.h"
+          },
+          "hashes": {
+            "md5": "97cc6cca53aac7e9094d7add368c7824"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx11core.h"
+          },
+          "hashes": {
+            "md5": "a7e4e3ce762ccec1d8c209123689686e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx11tex.h"
+          },
+          "hashes": {
+            "md5": "fb4eca913a8785e260e7249437b23247"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft directx sdk (june 2010)/include/d3dx11async.h"
+          },
+          "hashes": {
+            "md5": "96b77116f07167d726c39706a238d5ac"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,7 @@ class Player : public GameObject
 {
 private:
 	Model* m_Model;
+	class Shadow* m_Shadow;
 
 	ID3D11Buffer* m_VertexBuffer = NULL;
 	ID3D11ShaderResourceView* m_Texture = NULL;

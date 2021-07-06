@@ -5,6 +5,7 @@
 #include "input.h"
 #include "bullet.h"
 #include "player.h"
+#include "shadow.h"
 
 void Player::Init()
 {
@@ -18,6 +19,11 @@ void Player::Init()
 	Renderer::CreateVertexShader(&m_VertexShader, &m_VertexLayout, "vertexLightingVS.cso");
 
 	Renderer::CreatePixelShader(&m_PixelShader, "vertexLightingPS.cso");
+
+	Scene* scene = Manager::GetScene();
+	m_Shadow = scene->AddGameObject<Shadow>(1);
+	m_Shadow->SetPosition(m_Position);
+	m_Shadow->SetScale(D3DXVECTOR3(2.0f, 1.0f, 2.0f));
 }
 
 void Player::Uninit()
@@ -56,6 +62,8 @@ void Player::Update()
 		Scene* scene = Manager::GetScene();
 		scene->AddGameObject<Bullet>(1)->SetPosition(m_Position);
 	}
+
+	m_Shadow->SetPosition(m_Position);
 }
 
 void Player::Draw()

@@ -1,5 +1,16 @@
-﻿  bullet.cpp
+﻿  audio.cpp
+  bullet.cpp
+  camera.cpp
+  enemy.cpp
+  explosion.cpp
+  field.cpp
   game.cpp
+  main.cpp
+  manager.cpp
   player.cpp
+  polygon2D.cpp
+  shadow.cpp
   sky.cpp
-  DX11Project.vcxproj -> C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\x64\Debug\DX11Project.exe
+  title.cpp
+  titleLogo.cpp
+  DX11Project.vcxproj -> C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\x64\Debug\DX11Project.exe

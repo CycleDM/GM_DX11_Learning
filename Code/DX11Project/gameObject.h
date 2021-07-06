@@ -20,6 +20,8 @@ public:
 
 	D3DXVECTOR3 GetPosition() { return m_Position; }
 	void SetPosition(D3DXVECTOR3 Position) { m_Position = Position; }
+	void SetRotation(D3DXVECTOR3 Rotation) { m_Rotation = Rotation; }
+	void SetScale(D3DXVECTOR3 Scale) { m_Scale = Scale; }
 
 	D3DXVECTOR3 GetForward()// 全方向ベクトル取得
 	{
