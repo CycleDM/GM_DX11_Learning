@@ -12,6 +12,8 @@
 #include "bullet.h"
 #include "explosion.h"
 #include "audio.h"
+#include "input.h"
+#include "result.h"
 
 void Game::Init()
 {
@@ -30,8 +32,18 @@ void Game::Init()
 	AddGameObject<Polygon2D>(2);
 
 	Audio* bgm = AddGameObject<Audio>(2);
-	bgm->Load("asset\\audio\\bgm.wav");
+	bgm->Load("asset\\audio\\bgm1.wav");
 	bgm->Play(true);
+}
+
+void Game::Update()
+{
+	Scene::Update();
+
+	if (Input::GetKeyTrigger(VK_RETURN))
+	{
+		Manager::SetScene<Result>();
+	}
 }
 
 void Game::Uninit()

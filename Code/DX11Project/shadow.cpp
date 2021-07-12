@@ -43,7 +43,7 @@ void Shadow::Init()
 
 	D3DX11CreateShaderResourceViewFromFile(
 		Renderer::GetDevice(),
-		"asset/texture/floor.jpg",
+		"asset/texture/circleshadow.png",
 		NULL,
 		NULL,
 		&m_Texture,

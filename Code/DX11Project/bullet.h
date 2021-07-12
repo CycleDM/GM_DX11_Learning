@@ -12,6 +12,8 @@ private:
 	static ID3D11PixelShader* m_PixelShader;
 	static ID3D11InputLayout* m_VertexLayout;
 
+	D3DXVECTOR3 m_Forward;
+
 public:
 	static void Load();
 	static void Unload();
@@ -20,4 +22,9 @@ public:
 	void Uninit();
 	void Update();
 	void Draw();
+
+	void SetForward(D3DXVECTOR3 forward)
+	{
+		m_Forward = forward;
+	}
 };

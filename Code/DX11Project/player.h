@@ -2,6 +2,7 @@
 
 #include "gameObject.h"
 #include "model.h"
+#include "audio.h"
 
 class Player : public GameObject
 {
@@ -15,6 +16,7 @@ private:
 	ID3D11VertexShader* m_VertexShader = NULL;
 	ID3D11PixelShader* m_PixelShader = NULL;
 	ID3D11InputLayout* m_VertexLayout = NULL;
+	Audio* m_shotSE;
 
 public:
 	void Init();

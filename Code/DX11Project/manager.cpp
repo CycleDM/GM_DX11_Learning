@@ -6,6 +6,7 @@
 #include "audio.h"
 #include "game.h"
 #include "title.h"
+#include "result.h"
 
 Scene* Manager::m_Scene = NULL;
 

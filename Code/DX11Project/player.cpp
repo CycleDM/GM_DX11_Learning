@@ -21,9 +21,12 @@ void Player::Init()
 	Renderer::CreatePixelShader(&m_PixelShader, "vertexLightingPS.cso");
 
 	Scene* scene = Manager::GetScene();
-	m_Shadow = scene->AddGameObject<Shadow>(1);
-	m_Shadow->SetPosition(m_Position);
-	m_Shadow->SetScale(D3DXVECTOR3(2.0f, 1.0f, 2.0f));
+	//m_Shadow = scene->AddGameObject<Shadow>(1);
+	//m_Shadow->SetPosition(m_Position);
+	//m_Shadow->SetScale(D3DXVECTOR3(2.0f, 1.0f, 2.0f));
+
+	m_shotSE = scene->AddGameObject<Audio>(2);
+	m_shotSE->Load("asset\\audio\\shot.wav");
 }
 
 void Player::Uninit()
@@ -60,10 +63,13 @@ void Player::Update()
 	if (Input::GetKeyTrigger(VK_SPACE))
 	{
 		Scene* scene = Manager::GetScene();
-		scene->AddGameObject<Bullet>(1)->SetPosition(m_Position);
+		Bullet* bullet = scene->AddGameObject<Bullet>(1);
+		bullet->SetPosition(m_Position);
+		bullet->SetForward(forward);
+		m_shotSE->Play();
 	}
 
-	m_Shadow->SetPosition(m_Position);
+	//m_Shadow->SetPosition(m_Position);
 }
 
 void Player::Draw()

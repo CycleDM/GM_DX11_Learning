@@ -35,6 +35,7 @@ void Bullet::Init()
 	m_Position = D3DXVECTOR3(0.0f, 1.0f, 0.0f);
 	m_Rotation = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	m_Scale = D3DXVECTOR3(0.2f, 0.2f, 0.2f);
+	m_Forward = D3DXVECTOR3(0.0f, 0.0f, 1.0f);
 }
 
 void Bullet::Uninit()
@@ -43,7 +44,7 @@ void Bullet::Uninit()
 
 void Bullet::Update()
 {
-	m_Position.z += 0.1f;
+	m_Position += m_Forward * 0.1f;
 
 	if (m_Position.z > 6.0f)
 	{

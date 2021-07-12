@@ -73,6 +73,12 @@
     <ClCompile Include="shadow.cpp">
       <Filter>Source\GameObject</Filter>
     </ClCompile>
+    <ClCompile Include="resultLogo.cpp">
+      <Filter>Source\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="result.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="scene.h">
@@ -134,6 +140,12 @@
     </ClInclude>
     <ClInclude Include="shadow.h">
       <Filter>Source\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="resultLogo.h">
+      <Filter>Source\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="result.h">
+      <Filter>Source\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

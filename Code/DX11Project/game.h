@@ -6,5 +6,6 @@ class Game : public Scene
 {
 public:
 	void Init();
+	void Update();
 	void Uninit();
 };
