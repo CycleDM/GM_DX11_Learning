@@ -79,6 +79,9 @@
     <ClCompile Include="result.cpp">
       <Filter>Source\Scene</Filter>
     </ClCompile>
+    <ClCompile Include="animationModel.cpp">
+      <Filter>Source\GameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="scene.h">
@@ -146,6 +149,9 @@
     </ClInclude>
     <ClInclude Include="result.h">
       <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="animationModel.h">
+      <Filter>Source\GameObject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

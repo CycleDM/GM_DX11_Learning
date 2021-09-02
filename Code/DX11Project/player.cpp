@@ -6,15 +6,16 @@
 #include "bullet.h"
 #include "player.h"
 #include "shadow.h"
+#include "animationModel.h"
 
 void Player::Init()
 {
-	m_Model = new Model();
-	m_Model->Load("asset\\model\\torus.obj");
+	m_Model = new AnimationModel();
+	m_Model->Load("asset\\model\\Akai_Idle.fbx");
 
 	m_Position = D3DXVECTOR3(0.0f, 1.0f, -3.0f);
 	m_Rotation = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-	m_Scale = D3DXVECTOR3(1.0f, 1.0f, 1.0f);
+	m_Scale = D3DXVECTOR3(0.01f, 0.01f, 0.01f);
 
 	Renderer::CreateVertexShader(&m_VertexShader, &m_VertexLayout, "vertexLightingVS.cso");
 

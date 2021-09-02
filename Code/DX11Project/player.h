@@ -1,13 +1,13 @@
 #pragma once
 
 #include "gameObject.h"
-#include "model.h"
+#include "AnimationModel.h"
 #include "audio.h"
 
 class Player : public GameObject
 {
 private:
-	Model* m_Model;
+	AnimationModel* m_Model;
 	class Shadow* m_Shadow;
 
 	ID3D11Buffer* m_VertexBuffer = NULL;

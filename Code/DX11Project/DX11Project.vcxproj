@@ -155,6 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="animationModel.cpp" />
     <ClCompile Include="audio.cpp" />
     <ClCompile Include="bullet.cpp" />
     <ClCompile Include="camera.cpp" />
@@ -177,6 +178,7 @@
     <ClCompile Include="titleLogo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="animationModel.h" />
     <ClInclude Include="audio.h" />
     <ClInclude Include="bullet.h" />
     <ClInclude Include="camera.h" />
