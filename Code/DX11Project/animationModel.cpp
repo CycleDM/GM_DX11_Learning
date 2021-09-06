@@ -19,6 +19,13 @@ void AnimationModel::Draw()
 	{
 		aiMesh* mesh = m_AiScene->mMeshes[m];
 
+		aiMaterial* material = m_AiScene->mMaterials[mesh->mMaterialIndex];
+
+		// テクスチャ設定
+		aiString path;
+		material->GetTexture(aiTextureType_DIFFUSE, 0, &path);
+		Renderer::GetDeviceContext()->PSSetShaderResources(0, 1, &m_Texture[path.data]);
+
 		// 頂点バッファ設定
 		UINT stride = sizeof(VERTEX_3D);
 		UINT offset = 0;
@@ -38,7 +45,7 @@ void AnimationModel::Load(const char* FileName)
 {
 	const std::string modelPath(FileName);
 	
-	m_AiScene = aiImportFile(FileName, aiProcessPreset_TargetRealtime_MaxQuality);
+	m_AiScene = aiImportFile(FileName, aiProcessPreset_TargetRealtime_MaxQuality | aiProcess_ConvertToLeftHanded);
 	assert(m_AiScene);
 
 	m_VertexBuffer = new ID3D11Buffer * [m_AiScene->mNumMeshes];
@@ -107,6 +114,43 @@ void AnimationModel::Load(const char* FileName)
 			delete[] index;
 		}
 	}
+
+	// テクスチャ読み込み
+	{
+		for (unsigned int m = 0; m < m_AiScene->mNumMaterials; m++)
+		{
+			aiString path;
+
+			if (m_AiScene->mMaterials[m]->GetTexture(aiTextureType_DIFFUSE, 0, &path) == AI_SUCCESS)
+			{
+				if (path.data[0] == '*')
+				{
+					// FBXファイル内から読み込み
+					if (m_Texture[path.data] == NULL)
+					{
+						ID3D11ShaderResourceView* texture;
+						int id = atoi(&path.data[1]);
+
+						D3DX11CreateShaderResourceViewFromMemory(
+							Renderer::GetDevice(),
+							(const unsigned char*)m_AiScene->mTextures[id]->pcData,
+							m_AiScene->mTextures[id]->mWidth,
+							NULL, NULL, &texture, NULL);
+
+						m_Texture[path.data] = texture;
+					}
+				}
+				else
+				{
+					// 外部ファイルから読み込み
+				}
+			}
+			else
+			{
+				m_Texture[path.data] = NULL;
+			}
+		}
+	}
 }
 
 void AnimationModel::Unload()
@@ -119,6 +163,15 @@ void AnimationModel::Unload()
 
 	delete[] m_VertexBuffer;
 	delete[] m_IndexBuffer;
+
+	for (std::pair<std::string, ID3D11ShaderResourceView*> pair : m_Texture)
+	{
+		pair.second->Release();
+	}
+	//for (auto pair : m_Texture)
+	//{
+	//	pair.second->Release();
+	//}
 
 	aiReleaseImport(m_AiScene);
 }

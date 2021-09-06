@@ -1,10 +1,12 @@
 #pragma once
 
-#include <assimp/cimport.h>
-#include <assimp/scene.h>
-#include <assimp/postprocess.h>
-#include <assimp/matrix4x4.h>
-#pragma comment (lib, "assimp-vc142-mt.lib")
+#include <unordered_map>
+
+#include "assimp/cimport.h"
+#include "assimp/scene.h"
+#include "assimp/postprocess.h"
+#include "assimp/matrix4x4.h"
+#pragma comment (lib, "assimp.lib")
 
 class AnimationModel
 {
@@ -12,6 +14,8 @@ private:
 	const aiScene* m_AiScene = NULL;
 	ID3D11Buffer** m_VertexBuffer;
 	ID3D11Buffer** m_IndexBuffer;
+
+	std::unordered_map<std::string, ID3D11ShaderResourceView*> m_Texture;
 
 public:
 	void Load(const char* FileName);
