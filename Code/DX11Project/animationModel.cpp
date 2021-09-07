@@ -51,6 +51,12 @@ void AnimationModel::Load(const char* FileName)
 	m_VertexBuffer = new ID3D11Buffer * [m_AiScene->mNumMeshes];
 	m_IndexBuffer = new ID3D11Buffer * [m_AiScene->mNumMeshes];
 
+	// 変形後頂点配列生成
+	m_DeformVertex = new std::vector<DEFORM_VERTEX>[m_AiScene->mNumMeshes];
+
+	// 再帰的にボーン生成
+	CreateBone(m_AiScene->mRootNode);
+
 	for (unsigned int m = 0; m < m_AiScene->mNumMeshes; m++)
 	{
 		aiMesh* mesh = m_AiScene->mMeshes[m];
@@ -113,6 +119,45 @@ void AnimationModel::Load(const char* FileName)
 
 			delete[] index;
 		}
+		
+		// 変形後頂点データ初期化
+		for (unsigned int v = 0; v < mesh->mNumVertices; v++)
+		{
+			DEFORM_VERTEX deformVertex;
+			deformVertex.Position = mesh->mVertices[v];
+			deformVertex.Normal = mesh->mNormals[v];
+			deformVertex.BoneNum = 0;
+
+			for (unsigned int b = 0; b < 4; b++)
+			{
+				deformVertex.BoneName[b] = "";
+				deformVertex.BoneWeight[b] = 0.0f;
+			}
+
+			m_DeformVertex[m].push_back(deformVertex);
+		}
+
+		// ボーンデータ初期化
+		for (unsigned int b = 0; b < mesh->mNumBones; b++)
+		{
+			aiBone* bone = mesh->mBones[b];
+
+			m_Bone[bone->mName.C_Str()].OffsetMatrix = bone->mOffsetMatrix;
+
+			// 変形後頂点にボーンデータ格納
+			for (unsigned int w = 0; w < bone->mNumWeights; w++)
+			{
+				aiVertexWeight weight = bone->mWeights[w];
+
+				int num = m_DeformVertex[m][weight.mVertexId].BoneNum;
+
+				m_DeformVertex[m][weight.mVertexId].BoneWeight[num = weight.mWeight];
+				m_DeformVertex[m][weight.mVertexId].BoneName[num] = bone->mName.C_Str();
+				m_DeformVertex[m][weight.mVertexId].BoneNum++;
+
+				assert(m_DeformVertex[m][weight.mVertexId].BoneNum <= 4);
+			}
+		}
 	}
 
 	// テクスチャ読み込み
@@ -153,6 +198,17 @@ void AnimationModel::Load(const char* FileName)
 	}
 }
 
+void AnimationModel::CreateBone(aiNode* node)
+{
+	BONE bone;
+
+	m_Bone[node->mName.C_Str()] = bone;
+
+	for (unsigned int n = 0; n < node->mNumChildren; n++)
+	{
+		CreateBone(node->mChildren[n]);
+	}
+}
 void AnimationModel::Unload()
 {
 	for (unsigned int m = 0; m < m_AiScene->mNumMeshes; m++)
@@ -163,6 +219,8 @@ void AnimationModel::Unload()
 
 	delete[] m_VertexBuffer;
 	delete[] m_IndexBuffer;
+
+	delete[] m_DeformVertex;
 
 	for (std::pair<std::string, ID3D11ShaderResourceView*> pair : m_Texture)
 	{
@@ -179,4 +237,23 @@ void AnimationModel::Unload()
 void AnimationModel::Update()
 {
 
+}
+
+void AnimationModel::UpdateBoneMatrix(aiNode* node, aiMatrix4x4 matrix)
+{
+	BONE* bone = &m_Bone[node->mName.C_Str()];
+
+	// マトリクスの乗算順番に注意
+	aiMatrix4x4 worldMatrix;
+
+	worldMatrix = matrix;
+	worldMatrix *= bone->AnimationMatrix;
+
+	bone->Matrix = worldMatrix;
+	bone->Matrix *= bone->OffsetMatrix;
+
+	for (unsigned int n = 0; n < node->mNumChildren; n++)
+	{
+		UpdateBoneMatrix(node->mChildren[n], worldMatrix);
+	}
 }
