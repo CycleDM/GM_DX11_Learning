@@ -28,6 +28,8 @@ void Player::Init()
 
 	m_shotSE = scene->AddGameObject<Audio>(2);
 	m_shotSE->Load("asset\\audio\\shot.wav");
+
+	m_Frame = 0;
 }
 
 void Player::Uninit()
@@ -71,6 +73,10 @@ void Player::Update()
 	}
 
 	//m_Shadow->SetPosition(m_Position);
+
+	m_Frame++;
+
+	m_Model->Update(m_Frame);
 }
 
 void Player::Draw()

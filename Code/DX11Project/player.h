@@ -7,7 +7,7 @@
 class Player : public GameObject
 {
 private:
-	AnimationModel* m_Model;
+	class AnimationModel* m_Model;
 	class Shadow* m_Shadow;
 
 	ID3D11Buffer* m_VertexBuffer = NULL;
@@ -17,6 +17,8 @@ private:
 	ID3D11PixelShader* m_PixelShader = NULL;
 	ID3D11InputLayout* m_VertexLayout = NULL;
 	Audio* m_shotSE;
+
+	int m_Frame;
 
 public:
 	void Init();

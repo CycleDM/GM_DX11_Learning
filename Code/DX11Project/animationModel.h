@@ -44,6 +44,6 @@ private:
 public:
 	void Load(const char* FileName);
 	void Unload();
-	void Update();
+	void Update(int Frame);
 	void Draw();
 };

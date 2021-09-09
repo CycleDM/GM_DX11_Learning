@@ -33,7 +33,7 @@ void Game::Init()
 
 	Audio* bgm = AddGameObject<Audio>(2);
 	bgm->Load("asset\\audio\\bgm1.wav");
-	bgm->Play(true);
+	//bgm->Play(true);
 }
 
 void Game::Update()
