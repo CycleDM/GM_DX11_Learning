@@ -198,6 +198,12 @@ void AnimationModel::Load(const char* FileName)
 	}
 }
 
+void AnimationModel::LoadAnimation(const char* FileName, const char* AnimationName)
+{
+	m_Animation[AnimationName] = aiImportFile(FileName, aiProcess_ConvertToLeftHanded);
+	assert(m_Animation[AnimationName]);
+}
+
 void AnimationModel::CreateBone(aiNode* node)
 {
 	BONE bone;
@@ -234,15 +240,15 @@ void AnimationModel::Unload()
 	aiReleaseImport(m_AiScene);
 }
 
-void AnimationModel::Update(int Frame)
+void AnimationModel::Update(const char* AnimationName, int Frame)
 {
-	if (!m_AiScene->HasAnimations())
+	if (!m_Animation[AnimationName]->HasAnimations())
 	{
 		return;
 	}
 
 	// アニメーションデータからボーンマトリクス算出
-	aiAnimation* animation = m_AiScene->mAnimations[0];
+	aiAnimation* animation = m_Animation[AnimationName]->mAnimations[0];
 
 	for (unsigned int c = 0; c < animation->mNumChannels; c++)
 	{

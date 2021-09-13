@@ -30,6 +30,8 @@ class AnimationModel
 {
 private:
 	const aiScene* m_AiScene = NULL;
+	std::unordered_map<std::string, const aiScene*> m_Animation;
+
 	ID3D11Buffer** m_VertexBuffer;
 	ID3D11Buffer** m_IndexBuffer;
 
@@ -43,7 +45,8 @@ private:
 
 public:
 	void Load(const char* FileName);
+	void LoadAnimation(const char* FileName, const char* AnimationName);
 	void Unload();
-	void Update(int Frame);
+	void Update(const char* AnimationName, int Frame);
 	void Draw();
 };

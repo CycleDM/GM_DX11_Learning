@@ -12,13 +12,14 @@ void Player::Init()
 {
 	m_Model = new AnimationModel();
 	m_Model->Load("asset\\model\\Akai_Idle.fbx");
+	m_Model->LoadAnimation("asset\\model\\Akai_Idle.fbx", "Idle");
+	m_Model->LoadAnimation("asset\\model\\Akai_Run.fbx", "Run");
 
 	m_Position = D3DXVECTOR3(0.0f, 1.0f, -3.0f);
 	m_Rotation = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	m_Scale = D3DXVECTOR3(0.01f, 0.01f, 0.01f);
 
 	Renderer::CreateVertexShader(&m_VertexShader, &m_VertexLayout, "vertexLightingVS.cso");
-
 	Renderer::CreatePixelShader(&m_PixelShader, "vertexLightingPS.cso");
 
 	Scene* scene = Manager::GetScene();
@@ -44,6 +45,9 @@ void Player::Uninit()
 
 void Player::Update()
 {
+	m_Frame++;
+
+	/*
 	if (Input::GetKeyPress('A'))
 	{
 		m_Rotation.y -= 0.1f;
@@ -71,12 +75,18 @@ void Player::Update()
 		bullet->SetForward(forward);
 		m_shotSE->Play();
 	}
+	*/
 
 	//m_Shadow->SetPosition(m_Position);
 
-	m_Frame++;
-
-	m_Model->Update(m_Frame);
+	if (Input::GetKeyPress('W'))
+	{
+		m_Model->Update("Run", m_Frame);
+	}
+	else
+	{
+		m_Model->Update("Idle", m_Frame);
+	}
 }
 
 void Player::Draw()
