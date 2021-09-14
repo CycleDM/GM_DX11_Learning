@@ -19,6 +19,7 @@ private:
 	Audio* m_shotSE;
 
 	int m_Frame;
+	float m_BlendRate;
 
 public:
 	void Init();

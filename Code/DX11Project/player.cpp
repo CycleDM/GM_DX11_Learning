@@ -31,6 +31,7 @@ void Player::Init()
 	m_shotSE->Load("asset\\audio\\shot.wav");
 
 	m_Frame = 0;
+	m_BlendRate = 0.0f;
 }
 
 void Player::Uninit()
@@ -45,8 +46,6 @@ void Player::Uninit()
 
 void Player::Update()
 {
-	m_Frame++;
-
 	/*
 	if (Input::GetKeyPress('A'))
 	{
@@ -79,14 +78,23 @@ void Player::Update()
 
 	//m_Shadow->SetPosition(m_Position);
 
+	m_Frame++;
+
+	m_Model->Update("Idle", "Run", m_BlendRate, m_Frame);
+
 	if (Input::GetKeyPress('W'))
 	{
-		m_Model->Update("Run", m_Frame);
+		m_BlendRate += 0.03f;
 	}
-	else
+	if (Input::GetKeyPress('S'))
 	{
-		m_Model->Update("Idle", m_Frame);
+		m_BlendRate -= 0.03f;
 	}
+
+	if (m_BlendRate > 1.0f)
+		m_BlendRate = 1.0f;
+	if (m_BlendRate < 0.0f)
+		m_BlendRate = 0.0f;
 }
 
 void Player::Draw()

@@ -47,6 +47,6 @@ public:
 	void Load(const char* FileName);
 	void LoadAnimation(const char* FileName, const char* AnimationName);
 	void Unload();
-	void Update(const char* AnimationName, int Frame);
+	void Update(const char* AnimationName1, const char* AnimationName2, float BlendRate, int Frame);
 	void Draw();
 };

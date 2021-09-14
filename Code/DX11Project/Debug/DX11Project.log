@@ -1,6 +1,21 @@
-﻿  player.cpp
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+﻿  animationModel.cpp
+  camera.cpp
+  game.cpp
+  player.cpp
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 animationModel.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 animationModel.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 animationModel.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 animationModel.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
   DX11Project.vcxproj -> C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\Debug\DX11Project.exe

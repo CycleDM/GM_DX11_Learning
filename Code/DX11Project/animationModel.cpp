@@ -240,27 +240,43 @@ void AnimationModel::Unload()
 	aiReleaseImport(m_AiScene);
 }
 
-void AnimationModel::Update(const char* AnimationName, int Frame)
+void AnimationModel::Update(const char* AnimationName1, const char* AnimationName2, float BlendRate, int Frame)
 {
-	if (!m_Animation[AnimationName]->HasAnimations())
+	if (!m_Animation[AnimationName1]->HasAnimations())
+	{
+		return;
+	}
+	if (!m_Animation[AnimationName2]->HasAnimations())
 	{
 		return;
 	}
 
 	// アニメーションデータからボーンマトリクス算出
-	aiAnimation* animation = m_Animation[AnimationName]->mAnimations[0];
+	aiAnimation* animation1 = m_Animation[AnimationName1]->mAnimations[0];
+	aiAnimation* animation2 = m_Animation[AnimationName2]->mAnimations[0];
 
-	for (unsigned int c = 0; c < animation->mNumChannels; c++)
+	for (unsigned int c = 0; c < animation1->mNumChannels; c++)
 	{
-		aiNodeAnim* nodeAnim = animation->mChannels[c];
-		BONE* bone = &m_Bone[nodeAnim->mNodeName.C_Str()];
+		aiNodeAnim* nodeAnim1 = animation1->mChannels[c];
+		aiNodeAnim* nodeAnim2 = animation2->mChannels[c];
+		BONE* bone = &m_Bone[nodeAnim1->mNodeName.C_Str()];
 
 		int f;
-		f = Frame % nodeAnim->mNumRotationKeys;// 簡易実装
-		aiQuaternion rot = nodeAnim->mRotationKeys[f].mValue;
+		f = Frame % nodeAnim1->mNumRotationKeys;// 簡易実装
+		aiQuaternion rot1 = nodeAnim1->mRotationKeys[f].mValue;
 
-		f = Frame % nodeAnim->mNumPositionKeys;// 簡易実装
-		aiVector3D pos = nodeAnim->mPositionKeys[f].mValue;
+		f = Frame % nodeAnim1->mNumPositionKeys;// 簡易実装
+		aiVector3D pos1 = nodeAnim1->mPositionKeys[f].mValue;
+
+		f = Frame % nodeAnim2->mNumRotationKeys;// 簡易実装
+		aiQuaternion rot2 = nodeAnim2->mRotationKeys[f].mValue;
+
+		f = Frame % nodeAnim2->mNumPositionKeys;// 簡易実装
+		aiVector3D pos2 = nodeAnim2->mPositionKeys[f].mValue;
+
+		aiVector3D pos = pos1 * (1.0f - BlendRate) + pos2 * BlendRate;// 線形補間
+		aiQuaternion rot;
+		aiQuaternion::Interpolate(rot, rot1, rot2, BlendRate);// 球面線形補間
 
 		bone->AnimationMatrix = aiMatrix4x4(aiVector3D(1.0f, 1.0f, 1.0f), rot, pos);
 	}
