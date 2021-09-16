@@ -1,29 +1,11 @@
-﻿  compilation object save succeeded; see C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\unlitTexturePS.cso
-  compilation object save succeeded; see C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\unlitTextureVS.cso
-  compilation object save succeeded; see C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\vertexLightingPS.cso
-  compilation object save succeeded; see C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\vertexLightingVS.cso
-  animationModel.cpp
-  audio.cpp
-  bullet.cpp
-  camera.cpp
-  enemy.cpp
-  explosion.cpp
-  field.cpp
-  game.cpp
-  input.cpp
-  main.cpp
-  manager.cpp
-  model.cpp
-  player.cpp
-  polygon2D.cpp
-  renderer.cpp
-  result.cpp
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\cimport.h(51,10): fatal error C1083: 无法打开包括文件: “assimp/types.h”: No such file or directory (编译源文件 animationModel.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\cimport.h(51,10): fatal error C1083: 无法打开包括文件: “assimp/types.h”: No such file or directory (编译源文件 camera.cpp)
-  resultLogo.cpp
-  shadow.cpp
-  sky.cpp
-  title.cpp
-  titleLogo.cpp
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\cimport.h(51,10): fatal error C1083: 无法打开包括文件: “assimp/types.h”: No such file or directory (编译源文件 game.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\cimport.h(51,10): fatal error C1083: 无法打开包括文件: “assimp/types.h”: No such file or directory (编译源文件 player.cpp)
+﻿  player.cpp
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码
+  0 of 825 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  DX11Project.vcxproj -> C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\Release\DX11Project.exe

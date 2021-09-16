@@ -26,7 +26,7 @@ void Camera::Update()
 
 	// サードパーソンビュー
 	D3DXVECTOR3 forward = player->GetForward();
-	m_Position = m_Target - forward * 5.0f + D3DXVECTOR3(0.0f, 3.0f, 0.0f);
+	m_Position = m_Target + forward * 5.0f + D3DXVECTOR3(0.0f, 3.0f, 0.0f);
 }
 
 void Camera::Draw()
