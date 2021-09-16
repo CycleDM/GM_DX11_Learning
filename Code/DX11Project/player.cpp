@@ -82,13 +82,24 @@ void Player::Update()
 
 	m_Model->Update("Idle", "Run", m_BlendRate, m_Frame);
 
+	D3DXVECTOR3 forward = GetForward();
 	if (Input::GetKeyPress('W'))
 	{
 		m_BlendRate += 0.03f;
+		m_Position -= forward * 0.1f;
 	}
-	if (Input::GetKeyPress('S'))
+	else
 	{
 		m_BlendRate -= 0.03f;
+	}
+
+	if (Input::GetKeyPress('A'))
+	{
+		m_Rotation.y -= 0.1f;
+	}
+	if (Input::GetKeyPress('D'))
+	{
+		m_Rotation.y += 0.1f;
 	}
 
 	if (m_BlendRate > 1.0f)
