@@ -4,7 +4,7 @@
 #include "renderer.h"
 #include "game.h"
 #include "polygon2D.h"
-#include "field.h"
+#include "meshField.h"
 #include "camera.h"
 #include "model.h"
 #include "player.h"
@@ -21,7 +21,8 @@ void Game::Init()
 	Enemy::Load();
 
 	AddGameObject<Camera>(0);
-	AddGameObject<Field>(1);
+	//AddGameObject<Field>(1);
+	AddGameObject<MeshField>(1);
 	//AddGameObject<Sky>(1);
 	AddGameObject<Player>(1);
 
