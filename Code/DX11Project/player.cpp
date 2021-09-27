@@ -7,6 +7,7 @@
 #include "player.h"
 #include "shadow.h"
 #include "animationModel.h"
+#include "meshField.h"
 
 void Player::Init()
 {
@@ -106,6 +107,11 @@ void Player::Update()
 		m_BlendRate = 1.0f;
 	if (m_BlendRate < 0.0f)
 		m_BlendRate = 0.0f;
+
+	// メッシュフィールド高さ取得
+	MeshField* meshField = Manager::GetScene()->GetGameObject<MeshField>();
+
+	m_Position.y = meshField->GetHeight(m_Position);
 }
 
 void Player::Draw()

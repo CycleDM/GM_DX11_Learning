@@ -2,6 +2,31 @@
 #include "renderer.h"
 #include "meshField.h"
 
+float g_FiledHeight[21][21] =
+{
+	{0.0f, 1.0f, 1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 1.0f, 2.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 1.0f, 2.0f, 1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 1.0f, 2.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 1.0f, 2.0f, 1.0f, 3.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 1.0f, 2.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 1.0f, 5.0f, 5.0f, 7.0f, 3.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 1.0f, 2.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 4.0f, 5.0f, 6.0f, 7.0f, 3.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 1.0f, 2.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 4.0f, 5.0f, 5.0f, 4.0f, 3.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 1.0f, 2.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 1.0f, 2.0f, 4.0f, 3.0f, 3.0f, 3.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 1.0f, 2.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 1.0f, 2.0f, 4.0f, 4.0f, 2.0f, 3.0f, 2.0f, 1.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 1.0f, 2.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 1.0f, 2.0f, 3.0f, 2.0f, 1.0f, 2.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 0.0f, 2.0f, 0.0f, 1.0f, 0.0f, 2.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 0.0f, 0.0f, 0.0f, 2.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 0.0f, 0.0f, 0.0f, 3.0f, 4.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 2.0f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 0.0f, 0.0f, 0.0f, 4.0f, 3.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 2.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f},
+	{0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 2.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 7.0f, 5.0f, 7.0f},
+	{0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 2.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 6.0f, 5.0f, 7.0f},
+	{0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 3.0f, 2.0f, 3.0f, 0.0f, 0.0f, 0.0f, 2.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 5.0f, 6.0f, 6.0f},
+	{0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 3.0f, 2.0f, 3.0f, 0.0f, 0.0f, 0.0f, 2.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 7.0f, 6.0f, 4.0f},
+	{0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 3.0f, 2.0f, 3.0f, 0.0f, 0.0f, 0.0f, 2.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 3.0f, 5.0f, 7.0f},
+	{0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 0.0f, 3.0f, 2.0f, 3.0f, 0.0f, 0.0f, 0.0f, 2.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 7.0f, 5.0f, 7.0f}
+};
+
 void MeshField::Init()
 {
 	// 頂点バッファ生成
@@ -10,7 +35,7 @@ void MeshField::Init()
 		{
 			for (int z = 0; z <= 20; z++)
 			{
-				m_Vertex[x][z].Position = D3DXVECTOR3((x - 10) * 5.0f, sinf(x) * 4.0f, (z - 10) * -5.0f);
+				m_Vertex[x][z].Position = D3DXVECTOR3((x - 10) * 5.0f, g_FiledHeight[z][x], (z - 10) * -5.0f);
 				m_Vertex[x][z].Normal = D3DXVECTOR3(0.0f, 1.0f, 0.0f);// 法線ベクトル
 				m_Vertex[x][z].Diffuse = D3DXVECTOR4(1.0f, 1.0f, 1.0f, 1.0f);
 				m_Vertex[x][z].TexCoord = D3DXVECTOR2(x * 0.5f, z * 0.5f);
@@ -163,4 +188,49 @@ void MeshField::Draw()
 
 	// ポリゴン描画
 	Renderer::GetDeviceContext()->DrawIndexed((20 * 2) * 20 - 2, 0, 0);
+}
+
+float MeshField::GetHeight(D3DXVECTOR3 Position)
+{
+	int x, z;
+
+	// ブロック番号算出
+	x = Position.x / 5.0f + 10.0f;
+	z = Position.z / -5.0f + 10.0f;
+
+	D3DXVECTOR3 pos0, pos1, pos2, pos3;
+
+	pos0 = m_Vertex[x][z].Position;
+	pos1 = m_Vertex[x + 1][z].Position;
+	pos2 = m_Vertex[x][z + 1].Position;
+	pos3 = m_Vertex[x + 1][z + 1].Position;
+
+	D3DXVECTOR3 v12, v1p, c;
+
+	v12 = pos2 - pos1;
+	v1p = Position - pos1;
+
+	D3DXVec3Cross(&c, &v12, &v1p);
+
+	float py;
+	D3DXVECTOR3 n;
+	if (c.y > 0.0f)
+	{
+		// 左上ポリゴン
+		D3DXVECTOR3 v10;
+		v10 = pos0 - pos1;
+		D3DXVec3Cross(&n, &v10, &v12);
+	}
+	else
+	{
+		// 右下ポリゴン
+		D3DXVECTOR3 v13;
+		v13 = pos3 - pos1;
+		D3DXVec3Cross(&n, &v12, &v13);
+	}
+
+	// 高さ取得
+	py = -((Position.x - pos1.x) * n.x + (Position.z - pos1.z) * n.z) / n.y + pos1.y;
+
+	return py;
 }
