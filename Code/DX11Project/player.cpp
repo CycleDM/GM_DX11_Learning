@@ -8,6 +8,7 @@
 #include "shadow.h"
 #include "animationModel.h"
 #include "meshField.h"
+#include "camera.h"
 
 void Player::Init()
 {
@@ -87,7 +88,7 @@ void Player::Update()
 	if (Input::GetKeyPress('W'))
 	{
 		m_BlendRate += 0.03f;
-		m_Position -= forward * 0.1f;
+		m_Position -= forward * 0.08f;
 	}
 	else
 	{
@@ -116,6 +117,13 @@ void Player::Update()
 
 void Player::Draw()
 {
+	// 視錐台カリング
+	Scene* scene = Manager::GetScene();
+	Camera* camera = scene->GetGameObject<Camera>();
+
+	if (!camera->CheckView(m_Position))
+		return;
+
 	// 入力レイアウト設定
 	Renderer::GetDeviceContext()->IASetInputLayout(m_VertexLayout);
 	

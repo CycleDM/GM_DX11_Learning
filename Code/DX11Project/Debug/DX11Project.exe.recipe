@@ -2,21 +2,21 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\Debug\DX11Project.exe</FullPath>
+      <FullPath>C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\Debug\DX11Project.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\unlitTexturePS.cso</FullPath>
+      <FullPath>C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\unlitTexturePS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\unlitTextureVS.cso</FullPath>
+      <FullPath>C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\unlitTextureVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\vertexLightingPS.cso</FullPath>
+      <FullPath>C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\vertexLightingPS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\vertexLightingVS.cso</FullPath>
+      <FullPath>C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\vertexLightingVS.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
