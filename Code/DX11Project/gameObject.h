@@ -39,6 +39,36 @@ public:
 
 	void SetDestory() { m_Destroy = true; }
 
+	D3DXVECTOR3 GetObbX()
+	{
+		D3DXMATRIX rot, scale, world;
+		D3DXMatrixScaling(&scale, m_Scale.x, m_Scale.y, m_Scale.z);
+		D3DXMatrixRotationYawPitchRoll(&rot, m_Rotation.y, m_Rotation.x, m_Rotation.z);
+		world = scale * rot;
+
+		D3DXVECTOR3 vx;
+		vx.x = world._11;
+		vx.y = world._12;
+		vx.z = world._13;
+
+		return vx * 0.5f;
+	}
+
+	D3DXVECTOR3 GetObbZ()
+	{
+		D3DXMATRIX rot, scale, world;
+		D3DXMatrixScaling(&scale, m_Scale.x, m_Scale.y, m_Scale.z);
+		D3DXMatrixRotationYawPitchRoll(&rot, m_Rotation.y, m_Rotation.x, m_Rotation.z);
+		world = scale * rot;
+
+		D3DXVECTOR3 vz;
+		vz.x = world._31;
+		vz.y = world._32;
+		vz.z = world._33;
+
+		return vz * 0.5f;
+	}
+
 	bool Destroy()
 	{
 		if (m_Destroy)

@@ -104,6 +104,15 @@ void Player::Update()
 		m_Rotation.y += 0.1f;
 	}
 
+	if (Input::GetKeyTrigger(VK_SPACE))
+	{
+		Scene* scene = Manager::GetScene();
+		Bullet* bullet = scene->AddGameObject<Bullet>(1);
+		bullet->SetPosition(m_Position);
+		bullet->SetForward(-forward);
+		m_shotSE->Play();
+	}
+
 	if (m_BlendRate > 1.0f)
 		m_BlendRate = 1.0f;
 	if (m_BlendRate < 0.0f)

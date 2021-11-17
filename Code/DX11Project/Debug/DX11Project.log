@@ -1,1 +1,33 @@
-﻿  DX11Project.vcxproj -> C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\Debug\DX11Project.exe
+﻿  audio.cpp
+  bullet.cpp
+  camera.cpp
+  enemy.cpp
+  explosion.cpp
+  field.cpp
+  game.cpp
+  main.cpp
+  manager.cpp
+  meshField.cpp
+  player.cpp
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
+  polygon2D.cpp
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
+  result.cpp
+  resultLogo.cpp
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
+  shadow.cpp
+  sky.cpp
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\meshField.cpp(198,24): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\meshField.cpp(199,25): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  title.cpp
+  titleLogo.cpp
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
+C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
+  DX11Project.vcxproj -> C:\Users\CycleDM\Desktop\Projects\GM_DX11_Learning\Code\Debug\DX11Project.exe

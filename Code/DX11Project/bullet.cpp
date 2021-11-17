@@ -52,6 +52,7 @@ void Bullet::Update()
 		return;
 	}
 
+	/* older codes
 	Scene* scene = Manager::GetScene();
 	std::vector<Enemy*> enemyList = scene->GetGameObjects<Enemy>();
 
@@ -66,6 +67,37 @@ void Bullet::Update()
 		{
 			scene->AddGameObject<Explosion>(1)->SetPosition(enemyPosition);
 
+			enemy->SetDestory();
+			SetDestory();
+			return;
+		}
+	}
+	*/
+	Scene* scene = Manager::GetScene();
+	std::vector<Enemy*> enemyList = scene->GetGameObjects<Enemy>();
+
+	for (Enemy* enemy : enemyList)
+	{
+		D3DXVECTOR3 enemyPosition = enemy->GetPosition();
+		D3DXVECTOR3 direction = m_Position - enemyPosition;
+
+		D3DXVECTOR3 obbx, obbz;
+		float obbLenx, obbLenz;
+		obbx = enemy->GetObbX();
+		obbLenx = D3DXVec3Length(&obbx);
+		obbx /= obbLenx;
+
+		obbz = enemy->GetObbZ();
+		obbLenz = D3DXVec3Length(&obbz);
+		obbz /= obbLenz;
+
+		float lenX, lenZ;
+		lenX = D3DXVec3Dot(&obbx, &direction);
+		lenZ = D3DXVec3Dot(&obbz, &direction);
+
+		if (fabs(lenX) < obbLenx && fabs(lenZ) < obbLenz)
+		{
+			scene->AddGameObject<Explosion>(1)->SetPosition(m_Position);
 			enemy->SetDestory();
 			SetDestory();
 			return;
