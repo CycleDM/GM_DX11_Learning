@@ -21,7 +21,7 @@ void Camera::Update()
 	Player* player = Manager::GetScene()->GetGameObject<Player>();
 	//m_Target = player->GetPosition();
 
-	// トップビュー
+	// トップビュー 
 	//m_Position = m_Target + D3DXVECTOR3(0.0f, 5.0f, -8.0f);
 
 	// サードパーソンビュー

@@ -23,7 +23,7 @@ public:
 	void SetRotation(D3DXVECTOR3 Rotation) { m_Rotation = Rotation; }
 	void SetScale(D3DXVECTOR3 Scale) { m_Scale = Scale; }
 
-	D3DXVECTOR3 GetForward()// 全方向ベクトル取得
+	D3DXVECTOR3 GetForward()
 	{
 		D3DXMATRIX rot;
 		D3DXMatrixRotationYawPitchRoll(&rot,
