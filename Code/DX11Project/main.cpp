@@ -1,5 +1,3 @@
-
-
 #include "main.h"
 #include "scene.h"
 #include "manager.h"
@@ -39,7 +37,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	};
 
 	RegisterClassEx(&wcex);
-
 
 
 	g_Window = CreateWindowEx(0,

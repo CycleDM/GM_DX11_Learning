@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "02af1283-b81f-4238-853c-53eeea0502af": {
+      "ProjectGuid": "02af1283-b81f-4238-853c-53eeea0502af",
+      "DisplayName": "DX11Project",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
