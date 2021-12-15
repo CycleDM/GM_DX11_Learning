@@ -1,27 +1,49 @@
-﻿  camera.cpp
+﻿  compilation object save succeeded; see C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\unlitTexturePS.cso
+  compilation object save succeeded; see C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\unlitTextureVS.cso
+  compilation object save succeeded; see C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\vertexLightingPS.cso
+  compilation object save succeeded; see C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\vertexLightingVS.cso
+  animationModel.cpp
+  audio.cpp
+  bullet.cpp
+  camera.cpp
+  enemy.cpp
+  explosion.cpp
+  field.cpp
   game.cpp
+  input.cpp
+  main.cpp
+  manager.cpp
   meshField.cpp
+  model.cpp
   player.cpp
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.h(12,11): error C3646: “m_Vertex”: 未知重写说明符 (编译源文件 meshField.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.h(12,19): error C2143: 语法错误: 缺少“,”(在“[”的前面) (编译源文件 meshField.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.h(12,27): error C2238: 意外的标记位于“;”之前 (编译源文件 meshField.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.cpp(35,5): error C2065: “m_Vertex”: 未声明的标识符
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.cpp(36,5): error C2065: “m_Vertex”: 未声明的标识符
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.cpp(37,5): error C2065: “m_Vertex”: 未声明的标识符
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.cpp(38,5): error C2065: “m_Vertex”: 未声明的标识符
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.cpp(51,16): error C2065: “m_Vertex”: 未声明的标识符
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.h(12,11): error C3646: “m_Vertex”: 未知重写说明符 (编译源文件 game.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.h(12,19): error C2143: 语法错误: 缺少“,”(在“[”的前面) (编译源文件 game.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.h(12,27): error C2238: 意外的标记位于“;”之前 (编译源文件 game.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
-C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
+  polygon2D.cpp
+  renderer.cpp
+  result.cpp
+  resultLogo.cpp
+  shadow.cpp
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.cpp(198,24): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\meshField.cpp(199,25): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  sky.cpp
+  title.cpp
+  titleLogo.cpp
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 animationModel.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 animationModel.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 animationModel.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 animationModel.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 player.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 camera.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\defs.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.h(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix3x3.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\DX11Project\assimp\matrix4x4.inl(1,1): warning C4819: 该文件包含不能在当前代码页(932)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 game.cpp)
+  正在生成代码
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 902 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  DX11Project.vcxproj -> C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\Release\DX11Project.exe

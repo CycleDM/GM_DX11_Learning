@@ -1,2 +1,5 @@
-﻿  animationModel.cpp
-  DX11Project.vcxproj -> C:\Users\CycleDM\OneDrive\Projects\GM31\GM_DX11_Learning\Code\x64\Debug\DX11Project.exe
+﻿animationModel.obj : error LNK2019: 无法解析的外部符号 aiImportFile，函数 "public: void __cdecl AnimationModel::Load(char const *)" (?Load@AnimationModel@@QEAAXPEBD@Z) 中引用了该符号
+animationModel.obj : error LNK2019: 无法解析的外部符号 aiReleaseImport，函数 "public: void __cdecl AnimationModel::Unload(void)" (?Unload@AnimationModel@@QEAAXXZ) 中引用了该符号
+animationModel.obj : error LNK2019: 无法解析的外部符号 aiGetMaterialTexture，函数 "public: enum aiReturn __cdecl aiMaterial::GetTexture(enum aiTextureType,unsigned int,struct aiString *,enum aiTextureMapping *,unsigned int *,float *,enum aiTextureOp *,enum aiTextureMapMode *)const " (?GetTexture@aiMaterial@@QEBA?AW4aiReturn@@W4aiTextureType@@IPEAUaiString@@PEAW4aiTextureMapping@@PEAIPEAMPEAW4aiTextureOp@@PEAW4aiTextureMapMode@@@Z) 中引用了该符号
+assimp.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
+C:\Users\CycleDM\OneDrive\Development\Projects\GM31\GM_DX11_Learning\Code\x64\Debug\DX11Project.exe : fatal error LNK1120: 3 个无法解析的外部命令
